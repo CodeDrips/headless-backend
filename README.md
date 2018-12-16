@@ -1,5 +1,9 @@
 # Headless Backend
 
+A base for creating headless wordpress solutions. 
+
+Heavy lifting done by [Sage9](https://github.com/roots/sage) & [ACF](https://github.com/AdvancedCustomFields/acf)
+
 ## Requirements
 
 Make sure all dependencies have been installed before moving on:
