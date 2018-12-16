@@ -1,0 +1,32 @@
+@import "common/fonts";
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+@import "~ionicons-pre/scss/ionicons";
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
+
+/** Import common styles */
+@import "common/global";
+
+/** Import component styles */
+@import "components/buttons";
+
+/** Import acf content-blocks styles */
+
+/** Import layout styles */
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/single-post";
+
+
+

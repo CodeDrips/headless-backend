@@ -1,0 +1,79 @@
+/** Colors */
+$foundation-palette: (
+  primary: #242424,
+  secondary: #4AC0F1,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+// Look into foundation-sites/scss/settings/_settings.scss for overriddable settings
+
+// Site Variables
+// --------------
+
+// Grid (not Foundation variables, we apply custom styling)
+// Just using $global- prefix for consistency
+$global-row-width: (
+    small: 480px,
+    medium: 1000px,
+    large: 1268px,
+);
+$global-gutter: 30px;
+
+// Colors
+$primary: #222222;
+$secondary: #4AC0F1;
+$border-color: #000;
+$bla: #000;
+$whi: #fff;
+
+$transition: 0.4s all ease;
+
+
+// Foundation Overrides
+// -----------------------------
+
+// 1. Global
+$global-width: 1080px;
+
+
+// 2. Breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 769px,
+  large: 1080px
+);
+
+
+// 3. Grid
+$grid-column-gutter: (
+    small: $global-gutter
+);
+
+
+// 4. Base Typography
+$header-sizes: (
+  small: (
+    'h1': 28,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 47,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+
+// 5. Fonts
+$font-heading: 'DIN', sans-serif;
+$font-body: 'Gotham', sans-serif;
+$font-button: 'DIN', sans-serif;
+
