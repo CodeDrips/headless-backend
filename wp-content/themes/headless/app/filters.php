@@ -68,3 +68,8 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 });
+
+add_filter('upload_mimes', function(array $mimes) {
+    unset($mimes['gif']);
+    return $mimes;
+});
