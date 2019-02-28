@@ -10,12 +10,28 @@
 
 namespace Brain\Hierarchy\Branch;
 
+use Brain\Hierarchy\PostTemplates;
+
 /**
  * @author  Giuseppe Mazzapica <giuseppe.mazzapica@gmail.com>
  * @license http://opensource.org/licenses/MIT MIT
  */
 final class BranchPage implements BranchInterface
 {
+
+    /**
+     * @var \Brain\Hierarchy\PostTemplates
+     */
+    private $postTemplates;
+
+    /**
+     * @param \Brain\Hierarchy\PostTemplates|null $postTemplates
+     */
+    public function __construct(PostTemplates $postTemplates = null)
+    {
+        $this->postTemplates = $postTemplates ?: new PostTemplates();
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -39,31 +55,26 @@ final class BranchPage implements BranchInterface
     {
         /** @var \WP_Post $post */
         $post = $query->get_queried_object();
-
         $post instanceof \WP_Post or $post = new \WP_Post((object) ['ID' => 0]);
+
+        $template = $this->postTemplates->findFor($post);
         $pagename = $query->get('pagename');
+        (!$pagename && $post->ID) and $pagename = $post->post_name;
 
-        if (empty($post->post_name) && empty($pagename)) {
-            return ['page'];
+        $leaves = $template ? [$template] : [];
+        $baseLeaves = $post->ID ? ["page-{$post->ID}", 'page'] : ['page'];
+
+        if (!$pagename) {
+            return array_merge($leaves, $baseLeaves);
         }
 
-        $name = $pagename ? $pagename : $post->post_name;
-
-        $leaves = ["page-{$name}"];
-        $post->ID and $leaves[] = "page-{$post->ID}";
-        $leaves[] = 'page';
-
-        $template = ($post->ID && $post->post_type === 'page')
-            ? filter_var(get_page_template_slug($post), FILTER_SANITIZE_URL)
-            : false;
-
-        if (!empty($template) && validate_file($template) === 0) {
-            $dir = dirname($template);
-            $filename = pathinfo($template, PATHINFO_FILENAME);
-            $name = $dir === '.' ? $filename : "{$dir}/{$filename}";
-            array_unshift($leaves, $name);
+        $pagenameDecoded = urldecode($pagename);
+        if ($pagenameDecoded !== $pagename) {
+            $leaves[] = "page-{$pagenameDecoded}";
         }
 
-        return $leaves;
+        $leaves[] = "page-{$pagename}";
+
+        return array_merge($leaves, $baseLeaves);
     }
 }

@@ -6,15 +6,16 @@ use Illuminate\Filesystem\Filesystem;
 use InvalidArgumentException;
 use Roots\Sage\Installer\Presets\Bootstrap;
 use Roots\Sage\Installer\Presets\Bulma;
-use Roots\Sage\Installer\Presets\FontAwesome;
 use Roots\Sage\Installer\Presets\Foundation;
 use Roots\Sage\Installer\Presets\None;
 use Roots\Sage\Installer\Presets\Preset;
 use Roots\Sage\Installer\Presets\Tachyons;
+use Roots\Sage\Installer\Presets\Tailwind;
 use Roots\Sage\Installer\Transformations\Presets;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Ramsey\Uuid\Uuid;
 
 class PresetCommand extends Command
 {
@@ -43,20 +44,12 @@ class PresetCommand extends Command
             'Confirm overwriting files',
             null
         );
-        $this->addOption(
-            'fontawesome',
-            'F',
-            InputOption::VALUE_NONE,
-            'Install Font-Awesome',
-            null
-        );
     }
 
     /** {@inheritdoc} */
     protected function interact(InputInterface $input, OutputInterface $output)
     {
         $this->framework();
-        $this->fontAwesome();
     }
 
     /** {@inheritdoc} */
@@ -72,16 +65,27 @@ class PresetCommand extends Command
             return;
         }
         $preset->handle();
-        $this->extras();
-        $this->info('Done.');
-        $this->comment('Please run `yarn && yarn build` to compile your fresh scaffolding.');
-    }
+        $this->info(' Done.');
 
-    protected function extras()
-    {
-        if ($this->option('fontawesome')) {
-            (new FontAwesome($this->root))->handle();
+        // phpcs:disable
+        if ($this->confirm("Send anonymous usage data? \n<comment> We are only sending your framework selection and OS</comment>\n\n")) {
+            $curl = curl_init();
+            curl_setopt_array($curl, [
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL => 'https://stats.roots.io/i?device_id='.Uuid::uuid4().'&app_key=fd022e092a7ff07e996ca3cec86847bf1baf0879&begin_session=1&events=[{"key":"framework_selected","count":1,"segmentation":{"framework":"'.$this->argument('framework').'"}}]&metrics={"_os":"'.PHP_OS.'","_browser":"null","_browser_version":"0","_device":"null"}&end_session=1&session_duration=30',
+                CURLOPT_USERAGENT => 'sage-installer-composer'
+            ]);
+
+            $resp = curl_exec($curl);
+            curl_close($curl);
         }
+        // phpcs:enable
+
+        $this->comment('Please run `yarn && yarn build` to compile your fresh scaffolding.');
+        $this->comment('');
+        $this->comment('Help support our open-source development efforts by contributing to Sage via Patreon:');
+        $this->comment('https://www.patreon.com/rootsdev');
+        $this->comment('Join us on the Roots Slack when you become a supporter!');
     }
 
     protected function framework()
@@ -93,14 +97,6 @@ class PresetCommand extends Command
         $framework = $this->choice('Which framework would you like to load?', $this->presets->names(), $default);
         $framework = array_search($framework, $this->presets->names());
         $this->input->setArgument('framework', $this->presets->slugs()[$framework]);
-    }
-
-    protected function fontAwesome()
-    {
-        $installFontAwesome = $this->option('fontawesome')
-            ?: $this->confirm('Do you want to install Font Awesome?');
-
-        $this->input->setOption('fontawesome', $installFontAwesome);
     }
 
     /**
@@ -127,7 +123,8 @@ class PresetCommand extends Command
             new Bootstrap($this->root),
             new Bulma($this->root),
             new Foundation($this->root),
-            new Tachyons($this->root)
+            new Tachyons($this->root),
+            new Tailwind($this->root),
         ];
     }
 }

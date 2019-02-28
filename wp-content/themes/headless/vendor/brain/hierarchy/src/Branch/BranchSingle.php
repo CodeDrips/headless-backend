@@ -10,12 +10,27 @@
 
 namespace Brain\Hierarchy\Branch;
 
+use Brain\Hierarchy\PostTemplates;
+
 /**
  * @author  Giuseppe Mazzapica <giuseppe.mazzapica@gmail.com>
  * @license http://opensource.org/licenses/MIT MIT
  */
 final class BranchSingle implements BranchInterface
 {
+    /**
+     * @var \Brain\Hierarchy\PostTemplates
+     */
+    private $postTemplates;
+
+    /**
+     * @param \Brain\Hierarchy\PostTemplates|null $postTemplates
+     */
+    public function __construct(PostTemplates $postTemplates = null)
+    {
+        $this->postTemplates = $postTemplates ?: new PostTemplates();
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -53,6 +68,9 @@ final class BranchSingle implements BranchInterface
         if ($decoded !== $post->post_name) {
             array_unshift($leaves, "single-{$post->post_type}-{$decoded}");
         }
+
+        $template = $this->postTemplates->findFor($post);
+        $template and array_unshift($leaves, $template);
 
         return $leaves;
     }

@@ -117,8 +117,10 @@ abstract class Preset
             $packages['dependencies']['popper.js'],
             $packages['dependencies']['bulma'],
             $packages['dependencies']['tachyons-sass'],
-            $packages['dependencies']['foundation-sites']
+            $packages['dependencies']['foundation-sites'],
+            $packages['devDependencies']['tailwindcss']
         );
+
         return $packages;
     }
 
@@ -142,7 +144,7 @@ abstract class Preset
     /**
      * Remove presets
      *
-     * Removes previously loaded presets from the autoload folder
+     * Removes previously loaded presets from the autoload, build, and styles folder
      *
      * @return void
      */
@@ -155,6 +157,8 @@ abstract class Preset
         $files->delete("{$this->sageRoot}/resources/assets/styles/autoload/_foundation.scss");
         $files->delete("{$this->sageRoot}/resources/assets/scripts/autoload/_bootstrap.js");
         $files->delete("{$this->sageRoot}/resources/assets/scripts/autoload/_foundation.js");
+        $files->delete("{$this->sageRoot}/resources/assets/build/webpack.config.preset.js");
+        $files->delete("{$this->sageRoot}/resources/assets/styles/tailwind.config.js");
     }
 
     /**

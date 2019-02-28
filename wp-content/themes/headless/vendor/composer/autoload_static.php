@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
 {
     public static $files = array (
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'b50336562d531777993d90ca775abd88' => __DIR__ . '/..' . '/soberwp/controller/controller.php',
     );
 
@@ -17,6 +17,8 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Process\\' => 26,
@@ -30,10 +32,13 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         array (
             'Roots\\Sage\\Installer\\' => 21,
             'Roots\\Sage\\' => 11,
+            'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
+            'Psr\\Container\\' => 14,
         ),
         'N' => 
         array (
@@ -57,7 +62,6 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
-            'Carbon\\' => 7,
         ),
         'B' => 
         array (
@@ -73,6 +77,14 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/contracts',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -114,9 +126,21 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         array (
             0 => __DIR__ . '/..' . '/roots/sage-lib',
         ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Noodlehaus\\' => 
         array (
@@ -162,10 +186,6 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
-        'Carbon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
-        ),
         'Brain\\Hierarchy\\' => 
         array (
             0 => __DIR__ . '/..' . '/brain/hierarchy/src',
@@ -174,6 +194,10 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $classMap = array (
@@ -436,6 +460,7 @@ class ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit2e28d0453fd2b850df4cf5d23156dded::$classMap;
 
         }, null, ClassLoader::class);

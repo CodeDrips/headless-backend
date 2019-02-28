@@ -1,6 +1,6 @@
 {
   "name": "roots/sage-installer",
-  "description": "Sage installer.",
+  "description": "Sage starter theme installer",
   "keywords": [
     "sage",
     "wordpress",
@@ -8,7 +8,7 @@
     "foundation",
     "bootstrap",
     "tachyons",
-    "fontawesome"
+    "tailwindcss"
   ],
   "license": "MIT",
   "authors": [
@@ -32,12 +32,13 @@
     }
   },
   "require": {
-    "illuminate/console": "~5.4",
-    "illuminate/filesystem": "~5.4",
-    "symfony/process": "~3.3"
+    "illuminate/console": "~5.6",
+    "illuminate/filesystem": "~5.6",
+    "symfony/process": "~3.3",
+    "ramsey/uuid": "^3.8"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "~3.0"
+    "squizlabs/php_codesniffer": "~3.3.1"
   },
   "scripts": {
     "test": [
