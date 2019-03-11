@@ -14,7 +14,7 @@ License: GPLv3 or later
 Text Domain: netlify-webhook-deploy
 */
 
-/* 
+/*
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -63,7 +63,7 @@ class deployWebhook {
             <h3>Build Website</h3>
             <button id="build_button" name="submit" type="submit">Build Site</button><br>
             <p style="font-size: 12px">*Do not abuse the Build Site button*</p><br>
-            
+
             <hr>
 
             <h3>Deploy Status</h3>
@@ -89,14 +89,14 @@ class deployWebhook {
     }
 
     public function run_the_mighty_javascript() {
-        echo get_option('webhook_address');
+        //echo get_option('webhook_address');
         ?>
         <script type="text/javascript" >
         jQuery(document).ready(function($) {
             console.log('jQuery loaded');
             var _this = this;
             $( "td > input" ).css( "width", "100%");
-    
+
             var webhook_url = '<?php echo(get_option('webhook_address')) ?>';
             var netlify_user_agent = '<?php echo(get_option('netlify_user_agent')) ?>';
             var netlify_api_key = '<?php echo(get_option('netlify_api_key'))?>'
@@ -167,7 +167,7 @@ class deployWebhook {
 
     	add_menu_page( $page_title, $menu_title, $capability, $slug, $callback, $icon, $position );
     }
-    
+
     public function admin_notice() { ?>
         <div class="notice notice-success is-dismissible">
             <p>Your settings have been updated!</p>

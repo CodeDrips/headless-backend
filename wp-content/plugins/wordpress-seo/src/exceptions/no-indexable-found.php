@@ -5,9 +5,9 @@
  * @package Yoast\YoastSEO\Exceptions
  */
 
-namespace Yoast\YoastSEO\Exceptions;
+namespace Yoast\WP\Free\Exceptions;
 
-use Yoast\YoastSEO\Loggers\Logger;
+use Yoast\WP\Free\Loggers\Logger;
 
 /**
  * The exception when no indexable could be found.
@@ -96,7 +96,7 @@ class No_Indexable_Found extends \OutOfRangeException {
 	 */
 	public static function from_meta_key( $meta_key, $indexable_id ) {
 		$message = \sprintf(
-		/* translators: 1: expands to the indexable id. 2: expand to the meta key */
+			/* translators: 1: expands to the indexable id. 2: expand to the meta key */
 			\__( 'There is no meta found for indexable id %1$s and meta key %2$s.', 'wordpress-seo' ),
 			$indexable_id,
 			$meta_key

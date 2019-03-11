@@ -1,13 +1,37 @@
 <?php
-
-/*
-  Plugin Name: Simple Custom Post Order
-  Plugin URI: https://wordpress.org/plugins-wp/simple-custom-post-order/
-  Description: Order Items (Posts, Pages, and Custom Post Types) using a Drag and Drop Sortable JavaScript.
-  Version: 2.3.9
-  Author: Colorlib
-  Author URI: https://colorlib.com/wp/
- */
+/**
+* Plugin Name: Simple Custom Post Order
+* Plugin URI: https://wordpress.org/plugins-wp/simple-custom-post-order/
+* Description: Order Items (Posts, Pages, and Custom Post Types) using a Drag and Drop Sortable JavaScript.
+* Version: 2.4.1
+* Author: Colorlib
+* Author URI: https://colorlib.com/
+* Tested up to: 5.1
+* Requires: 4.6 or higher
+* License: GPLv3 or later
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Requires PHP: 5.6
+* Text Domain: simple-custom-post-order
+* Domain Path: /languages
+*
+* Copyright 2013-2017 Sameer Humagain im@hsameer.com.np
+* Copyright 2017-2019 Colorlib support@colorlib.com
+*
+* SVN commit with ownership change: https://plugins.trac.wordpress.org/changeset/1590135/simple-custom-post-order
+*
+* This program is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License, version 3, as
+* published by the Free Software Foundation.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
 
 
 define('SCPORDER_URL', plugins_url('', __FILE__));
@@ -45,6 +69,11 @@ class SCPO_Engine {
         add_action( 'admin_notices', array( $this, 'scporder_notice_not_checked' ) );
         add_action( 'wp_ajax_scporder_dismiss_notices', array( $this, 'dismiss_notices' ) );
 
+        add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+    }
+
+    public function load_plugin_textdomain(){
+        load_plugin_textdomain( 'simple-custom-post-order', false, basename( dirname( __FILE__ ) ) . '/languages/' );
     }
 
     public function dismiss_notices() {
@@ -82,12 +111,12 @@ class SCPO_Engine {
         <div class="notice scpo-notice" id="scpo-notice">
             <img src="<?php echo esc_url( plugins_url( 'assets/logo.jpg', __FILE__ ) ); ?>" width="80">
 
-            <h1><?php esc_html_e( 'Simple Custom Post Order', 'scporder' ); ?></h1>
+            <h1><?php esc_html_e( 'Simple Custom Post Order', 'simple-custom-post-order' ); ?></h1>
 
-            <p><?php esc_html_e( 'Thank you for installing our awesome plugin, in order to enable it you need to go to the settings page and select which custom post or taxonomy you want to order.', 'scporder' ); ?></p>
+            <p><?php esc_html_e( 'Thank you for installing our awesome plugin, in order to enable it you need to go to the settings page and select which custom post or taxonomy you want to order.', 'simple-custom-post-order' ); ?></p>
 
-            <p><a href="<?php echo admin_url( 'options-general.php?page=scporder-settings' ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Get started !', 'scporder' ); ?></a></p>
-            <button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e( 'Dismiss this notice.', 'scporder' ); ?></span></button>
+            <p><a href="<?php echo admin_url( 'options-general.php?page=scporder-settings' ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Get started !', 'simple-custom-post-order' ); ?></a></p>
+            <button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e( 'Dismiss this notice.', 'simple-custom-post-order' ); ?></span></button>
         </div>
 
         <style>
@@ -104,8 +133,6 @@ class SCPO_Engine {
             jQuery(document).ready(function(){
                 jQuery( '#scpo-notice .notice-dismiss' ).click(function( evt ){
                     evt.preventDefault();
-
-                    console.log( 'asdasdas' );
 
                     var ajaxData = {
                         'action' : 'scporder_dismiss_notices',
@@ -138,7 +165,7 @@ class SCPO_Engine {
     }
 
     public function admin_menu() {
-        add_options_page(__('SCPOrder', 'scporder'), __('SCPOrder', 'scporder'), 'manage_options', 'scporder-settings', array($this, 'admin_page'));
+        add_options_page(__('SCPOrder', 'simple-custom-post-order'), __('SCPOrder', 'simple-custom-post-order'), 'manage_options', 'scporder-settings', array($this, 'admin_page'));
     }
 
     public function admin_page() {
@@ -197,18 +224,21 @@ class SCPO_Engine {
                     FROM $wpdb->posts
                     WHERE post_type = '" . $object . "' AND post_status IN ('publish', 'pending', 'draft', 'private', 'future')
                 ");
+
                 if ($result[0]->cnt == 0 || $result[0]->cnt == $result[0]->max)
                     continue;
 
-                $results = $wpdb->get_results("
-                    SELECT ID
-                    FROM $wpdb->posts
-                    WHERE post_type = '" . $object . "' AND post_status IN ('publish', 'pending', 'draft', 'private', 'future')
-                    ORDER BY menu_order ASC
-                ");
-                foreach ($results as $key => $result) {
-                    $wpdb->update($wpdb->posts, array('menu_order' => $key + 1), array('ID' => $result->ID));
-                }
+                // Here's the optimization
+                $wpdb->query("SET @row_number = 0;");
+                $wpdb->query("UPDATE $wpdb->posts as pt JOIN (
+                  SELECT ID, (@row_number:=@row_number + 1) AS rank
+                  FROM $wpdb->posts
+                  WHERE post_type = '$object' AND post_status IN ( 'publish', 'pending', 'draft', 'private', 'future' )
+                  ORDER BY menu_order ASC
+                ) as pt2
+                ON pt.id = pt2.id
+                SET pt.menu_order = pt2.rank;");
+
             }
         }
 

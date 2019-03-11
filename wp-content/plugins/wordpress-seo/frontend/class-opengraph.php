@@ -10,7 +10,9 @@
  */
 class WPSEO_OpenGraph {
 
-	/** @var WPSEO_Frontend_Page_Type */
+	/**
+	 * @var WPSEO_Frontend_Page_Type
+	 */
 	protected $frontend_page_type;
 
 	/**
@@ -602,6 +604,10 @@ class WPSEO_OpenGraph {
 			if ( ! is_string( $ogdesc ) || ( is_string( $ogdesc ) && $ogdesc === '' ) ) {
 				$ogdesc = str_replace( '[&hellip;]', '&hellip;', wp_strip_all_tags( get_the_excerpt() ) );
 			}
+		}
+
+		if ( is_author() ) {
+			$ogdesc = $frontend->metadesc( false );
 		}
 
 		if ( is_category() || is_tag() || is_tax() ) {
