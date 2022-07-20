@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="8px" viewBox="0 0 6 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>i/trending copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.913725 0 0 0 0 0.917647 0 0 0 0 0.921569 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0 0 8 0 8 8 0 8"></polygon>
+    </defs>
+    <g id="TT-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Article-Page" transform="translate(-825.000000, -709.000000)">
+            <g id="Group-2" transform="translate(90.000000, 694.000000)">
+                <g id="/i/trending-copy" transform="translate(735.000000, 15.000000)">
+                    <g filter="url(#filter-1)" id="Group-3">
+                        <g>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                        </g>
+                    </g>
+                    <polygon id="Fill-1" fill="#67655B" points="0 0 0 0.125386997 1.82799062 2.3498452 0 4.56501548 0 4.69040248 4.77091478 4.69040248 4.77091478 8 6 8 6 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

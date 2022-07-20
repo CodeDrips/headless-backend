@@ -11,12 +11,16 @@
 final class WPSEO_Admin_Asset_Analysis_Worker_Location implements WPSEO_Admin_Asset_Location {
 
 	/**
-	 * @var WPSEO_Admin_Asset_Location $asset_location.
+	 * Holds the asset's location.
+	 *
+	 * @var WPSEO_Admin_Asset_Location
 	 */
 	private $asset_location;
 
 	/**
-	 * @var WPSEO_Admin_Asset $asset.
+	 * Holds the asset itself.
+	 *
+	 * @var WPSEO_Admin_Asset
 	 */
 	private $asset;
 
@@ -32,24 +36,14 @@ final class WPSEO_Admin_Asset_Analysis_Worker_Location implements WPSEO_Admin_As
 			$flat_version  = $asset_manager->flatten_version( WPSEO_VERSION );
 		}
 
-		$analysis_worker = 'wp-seo-' . $name . '-' . $flat_version;
-		if ( $name === 'analysis-worker' && WPSEO_Recalibration_Beta::is_enabled() ) {
-			/*
-			 * Using a flag to determine whether the local file or the proxy is used.
-			 * This is for the recalibration development.
-			 */
-			$analysis_worker = 'wp-seo-' . $name . '-recalibration-' . $flat_version;
-			if ( ! $this->use_recalibration_local_file() ) {
-				$analysis_worker = admin_url( 'admin.php?page=wpseo_myyoast_proxy&file=research-webworker&plugin_version=' . $flat_version );
-			}
-		}
+		$analysis_worker = $name . '-' . $flat_version . '.js';
 
 		$this->asset_location = WPSEO_Admin_Asset_Manager::create_default_location();
 		$this->asset          = new WPSEO_Admin_Asset(
-			array(
+			[
 				'name' => $name,
 				'src'  => $analysis_worker,
-			)
+			]
 		);
 	}
 
@@ -72,21 +66,10 @@ final class WPSEO_Admin_Asset_Analysis_Worker_Location implements WPSEO_Admin_As
 	 */
 	public function get_url( WPSEO_Admin_Asset $asset, $type ) {
 		$scheme = wp_parse_url( $asset->get_src(), PHP_URL_SCHEME );
-		if ( in_array( $scheme, array( 'http', 'https' ), true ) ) {
+		if ( in_array( $scheme, [ 'http', 'https' ], true ) ) {
 			return $asset->get_src();
 		}
 
 		return $this->asset_location->get_url( $asset, $type );
-	}
-
-	/**
-	 * Checks if the recalibration beta should use the local file.
-	 *
-	 * If false, the my-yoast-proxy should be used.
-	 *
-	 * @return bool Whether the local file should be used.
-	 */
-	protected function use_recalibration_local_file() {
-		return defined( 'YOAST_SEO_RECALIBRATION_USE_LOCAL_FILE' ) && YOAST_SEO_RECALIBRATION_USE_LOCAL_FILE;
 	}
 }

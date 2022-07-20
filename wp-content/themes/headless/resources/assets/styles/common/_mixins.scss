@@ -1,0 +1,86 @@
+@mixin breakpoint($point) {
+  @if $point == large {
+     @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+     @media (min-width: 900px) { @content; }
+  }
+  @else if $point == small {
+     @media (min-width: 600px) { @content; }
+  }
+}
+
+@mixin inner {
+  padding: 0 20px;
+  max-width: $content-width;
+  margin: 0 auto;
+  @include breakpoint(medium) {
+    padding: 0 50px;
+  }
+}
+
+@mixin hoverline($color) {
+  display: inline-block;
+  position: relative;
+  color: $color;
+  text-decoration: none; 
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: $color;
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+  }
+}
+
+@mixin title-small($color) {
+  margin-top: 0;
+  font-size: 11px;
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+  line-height: inherit;
+
+  &:after {
+    height: 1px;
+    width: 100%;
+    background: $color;
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+  }
+}
+
+@mixin title($color) {
+  font-family: $font--heading;
+  color: $color;
+  letter-spacing: 1.09px;
+  font-size: 40px;
+  line-height: 50px;
+
+  @include breakpoint(medium) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@mixin body-text($color) {
+  font-family: $font--body;
+  font-size: 16px;
+  color: $color;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: 100;
+}

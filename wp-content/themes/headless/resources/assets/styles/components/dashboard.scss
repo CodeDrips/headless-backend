@@ -1,0 +1,370 @@
+.dashboard {
+	padding: 55px 0;
+	@include breakpoint(medium) {
+		padding: 0;
+	}
+	&__inner {
+		@include inner;
+	}
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 15px 0;
+		@include breakpoint(medium) {
+			padding: 15px 0 60px;
+		}
+		h1 {
+			font-size: 22px;
+			width: 100%;
+			text-align: center;
+			@include breakpoint(medium) {
+				width: calc(23% - 40px);
+				display: block;
+				text-align: left;
+			}
+		}
+	}
+	&__profile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		background: $color--dark-grey;
+		padding: 16px;
+		border-radius: 4px;
+		width: 100%;
+		@include breakpoint(medium) {
+			width: calc(75% - 40px);
+			padding: 16px 32px;
+		}
+		img {
+			width: 31px;
+			height: 31px;
+			margin: 0;
+			border-radius: 50%;
+			@include breakpoint(medium) {
+				width: 46px;
+				height: 46px;
+			}
+		}
+		.btn {
+			font-size: 9px;
+			font-weight: 600;
+			background: transparent;
+			display: block;
+			width: 68px;
+			letter-spacing: 1px;
+			text-align: center;
+			padding: 7px 0;
+			@include breakpoint(medium) {
+				width: 98px;
+				font-size: 10px;
+				padding: 9px 0;
+			}
+		}
+	}
+	&__image {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width: calc(100% - 80px);
+		@include breakpoint(medium) {
+			width: calc(100% - 130px);
+		}
+		h4 {
+			font-size: 10px;
+			font-weight: 500;
+			margin-left: 15px;
+			margin: 0 0 0 10px;
+			@include breakpoint(medium) {
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1.38px;
+				margin: 0 0 0 15px;
+			}
+		}
+	}
+	&__logout {
+		width: 70px;
+		@include breakpoint(medium) {
+			width: 100px;
+		}
+	}
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include breakpoint(medium) {
+			min-height: 300px;
+			padding-bottom: 120px;
+		}
+		.brands__items {
+			margin-top: 0;
+			@include breakpoint(medium) {
+				margin-top: -55px;
+			}
+			.brands__item {
+				h4 {
+					margin-top: 0;
+					@include breakpoint(medium) {
+						margin-top: 20px;
+					}
+				}
+				li {
+					font-size: 11px;
+					a {
+						span {
+							display: inline-block;
+							width: 16px;
+							height: 16px;
+							border: 1px solid $color--white;
+							margin-right: 10px;
+							vertical-align: middle;
+							position: relative;
+						}
+						&.active {
+							span {
+								background: $color--white;
+								&:before {
+									content: '';
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									transform: translate(-50%, -50%);
+									background-image: url('../images/tick.svg');
+									background-size: cover;
+									width: 15px;
+									height: 12px;
+								}
+							}
+						}
+					}
+				}
+				@include breakpoint(medium) {
+					width: 25%;	
+					li {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+		.archive__featured {
+			padding-top: 0;
+		}
+	}
+	&__article {
+		padding-bottom: 34px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		position: relative;
+		.card {
+			border-bottom: 0;
+			width: 100%;
+			margin-left: 0;
+			@include breakpoint(medium) {
+				width: calc(100% - 100px);
+			}
+			&__feature {
+				height: 280px;
+				img {
+					height: 280px;
+				}
+				@include breakpoint(medium) {
+					width: 48.5%;
+					height: 223px;
+					img {
+						height: 223px;
+					}
+				}
+			}
+			.article__header {
+				.article__category {
+					margin-bottom: 0;
+				}
+				.article__meta {
+					width: auto;
+				}
+			}
+			&__content {
+				width: 100%;
+				padding: 0;
+				@include breakpoint(medium) {
+					width: 48.5%;
+				}
+				h4 {
+					font-size: 18px;
+					line-height: 28px;
+					margin: 12px 0 6px;
+					a {
+						font-size: 18px;
+						line-height: 28px;
+					}
+				}
+				p {
+
+				}
+			}
+		}
+	}
+	&__switch {
+		width: 54px;
+		border: 1px solid $color--white;
+		border-radius: 10px;
+		font-size: 8px;
+		letter-spacing: 1.2px;
+		color: $color--white;
+		text-transform: uppercase;
+		line-height: 1;
+		padding: 4px 10px 5px;
+		position: relative;
+		cursor: pointer;
+		transition: all ease 0.3s;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		@include breakpoint(medium) {
+			position: static;
+			color: $color--grey;
+			border: 1px solid $color--grey;
+		}
+		&.off {
+			color: transparent;
+			.dashboard__switch-toggle {
+				right: auto;
+				left: 2px;
+			}
+		}
+	}
+	&__switch-toggle {
+		display: block;
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		background: $color--white;
+		border-radius: 50%;
+		top: 2px;
+		right: 2px;
+		transition: all ease 0.3s;
+	}
+	&__nav {
+		display: none;
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+	&__mobile-nav {
+		display: block;
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+	&__edit-profile {
+		display: none;
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+	&__sidebar {
+		width: 100%;
+		@include breakpoint(medium) {
+			width: 23%;
+			display: block;
+		}
+		&--account {
+			.dashboard__mobile-nav {
+				display: none;
+			}
+			.dashboard__nav {
+				display: block;
+			}
+		}
+		ul {
+			padding: 0;
+			margin: 15px -20px;
+			list-style: none;
+			border-top: 1px solid rgba($color--white, 0.11);
+			width: calc(100% + 40px);
+			@include breakpoint(medium) {
+				border-top: 0;
+				margin: 0;
+				width: 100%;
+			}
+			li {
+				font-size: 13px;
+				border-bottom: 1px solid rgba($color--white, 0.11);
+				position: relative;
+				&:after {
+					background-image: url('../images/right-arrow.svg');
+					background-size: cover;
+					width: 5px;
+					height: 9px;
+					position: absolute;
+					top: 16px;
+					right: 20px;
+					content: '';
+					transition: all ease 0.2s;
+				}
+				@include breakpoint(medium) {
+					border-bottom: none;
+					margin: 0 0 15px;
+					&.active {
+						font-weight: 600;
+					}
+					&:after {
+						display: none;
+					}
+				}
+				a {
+					color: $color--white;
+					text-decoration: none;
+					display: block;
+					padding: 7px 20px;
+					@include breakpoint(medium) {
+						padding: 0;
+					}
+				}
+			}
+			&.dashboard__mobile-nav {
+				li {
+					padding-left: 20px;
+					&:after {
+						right: auto;
+						left: 20px;
+						transform: rotate(-180deg);
+						top: 14px;
+					}
+				}
+			}
+		}
+	}
+	&__main {
+		width: 100%;
+		@include breakpoint(medium) {
+			width: 75%;
+			display: block;
+		}
+		.form-block {
+			max-width: 415px;
+			@include breakpoint(medium) {
+				max-width: 300px;
+			}
+			.gform_wrapper {
+				input[type="submit"] {
+					background: $color--green-grey;
+					color: $color--white;
+					width: 100%;
+					font-size: 13px;
+					padding: 10px 0;
+					border: 1px solid $color--green-grey;
+					border-radius: 1px;
+					&:focus {
+						outline: 0;
+					}
+				}
+			}
+		}
+	}
+}

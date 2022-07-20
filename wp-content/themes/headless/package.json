@@ -1,112 +1,57 @@
 {
-  "name": "sage",
-  "version": "9.0.0",
-  "author": "Roots <team@roots.io>",
-  "homepage": "https://roots.io/sage/",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/roots/sage.git"
-  },
-  "bugs": {
-    "url": "https://github.com/roots/sage/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
   "browserslist": [
-    "last 2 versions",
-    "android 4",
-    "opera 12"
+    "extends @wordpress/browserslist-config"
   ],
-  "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "no-empty-source": null,
-      "at-rule-no-unknown": [
-        true,
-        {
-          "ignoreAtRules": [
-            "extend",
-            "at-root",
-            "debug",
-            "warn",
-            "error",
-            "if",
-            "else",
-            "for",
-            "each",
-            "while",
-            "mixin",
-            "include",
-            "content",
-            "return",
-            "function"
-          ]
-        }
-      ]
-    }
+  "engines": {
+    "node": ">=12.0.0"
   },
   "scripts": {
-    "build": "webpack --progress --config resources/assets/build/webpack.config.js",
-    "build:production": "webpack --progress -p --config resources/assets/build/webpack.config.js",
-    "build:profile": "webpack --progress --profile --json --config resources/assets/build/webpack.config.js",
-    "start": "webpack --hide-modules --watch --config resources/assets/build/webpack.config.js",
-    "rmdist": "rimraf dist",
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles",
-    "lint:scripts": "eslint resources/assets/scripts resources/assets/build",
-    "lint:styles": "stylelint \"resources/assets/styles/**/*.{css,sass,scss,sss,less}\"",
-    "test": "npm run -s lint"
-  },
-  "engines": {
-    "node": ">= 6.9.4"
+    "build": "cross-env NODE_ENV=development run-s mix",
+    "build:production": "cross-env NODE_ENV=production run-s clean mix",
+    "start": "cross-env NODE_ENV=development run-s \"mix -- --watch\"",
+    "hot": "cross-env NODE_ENV=development run-s build mix:hot",
+    "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix:hot": "webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "clean": "run-p clean:*",
+    "clean:dist": "rimraf dist",
+    "clean:cache": "rimraf storage/framework/cache/*.php storage/framework/cache/data/*.php",
+    "clean:views": "rimraf storage/framework/views/*.php",
+    "lint": "run-s -c lint:*",
+    "lint:scripts": "eslint resources/assets/scripts",
+    "lint:styles": "stylelint \"resources/assets/**/*.{vue,css,sass,scss,less}\"",
+    "test": "run-s -c lint",
+    "translate": "run-s -c translate:*",
+    "translate:pot": "wp i18n make-pot . ./resources/languages/sage.pot --ignore-domain --include=\"app,resources/assets,resources/views\"",
+    "translate:js": "wp i18n make-json ./resources/languages --no-purge --pretty-print"
   },
   "devDependencies": {
-    "autoprefixer": "~9.5.0",
-    "browser-sync": "~2.26.3",
-    "browsersync-webpack-plugin": "^0.6.0",
-    "bs-html-injector": "~3.0",
-    "buble-loader": "^0.5.1",
-    "cache-loader": "~2.0.1",
-    "clean-webpack-plugin": "^2.0.1",
-    "copy-globs-webpack-plugin": "^0.3.0",
-    "css-loader": "^2.1.1",
-    "cssnano": "~4.1.10",
-    "eslint": "~5.15.3",
-    "eslint-loader": "~2.1.2",
-    "eslint-plugin-import": "~2.16.0",
-    "extract-text-webpack-plugin": "~3.0.2",
-    "file-loader": "^3.0.1",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "imagemin-mozjpeg": "~8.0.0",
-    "imagemin-webpack-plugin": "~2.4.2",
-    "import-glob": "~1.5",
-    "node-sass": "~4.11.0",
-    "postcss-loader": "~3.0.0",
-    "postcss-safe-parser": "~4.0.1",
-    "resolve-url-loader": "~3.0.1",
-    "rimraf": "~2.6.3",
-    "sass-loader": "~7.1.0",
-    "style-loader": "^0.23.1",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "~18.2.0",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "url-loader": "^1.1.2",
-    "webpack": "~4.29.6",
-    "webpack-assets-manifest": "^3.1.1",
-    "webpack-dev-middleware": "~3.6.1",
-    "webpack-hot-middleware": "~2.24.3",
-    "webpack-merge": "~4.2.1",
-    "yargs": "~13.2.2"
+    "@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
+    "@wordpress/babel-preset-default": "^4.17.0",
+    "@wordpress/browserslist-config": "^2.7.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^2.8.0",
+    "babel-eslint": "^10.1.0",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-plugin-import": "^2.22.0",
+    "laravel-mix": "^5.0.4",
+    "laravel-mix-copy-watched": "^2.2.4",
+    "laravel-mix-purgecss": "^5.0.0",
+    "npm-run-all": "^4.1",
+    "purgecss-with-wordpress": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "font-awesome": "~4.7",
-    "foundation-sites": "~6.5.3",
-    "ionicons-pre": "^1.0.0-pre",
-    "jquery": "^3.4.0",
-    "slick-carousel": "^1.8.1"
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "browser-sync": "2.21.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }

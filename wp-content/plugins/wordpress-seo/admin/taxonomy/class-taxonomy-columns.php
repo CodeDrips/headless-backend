@@ -11,17 +11,23 @@
 class WPSEO_Taxonomy_Columns {
 
 	/**
+	 * The SEO analysis.
+	 *
 	 * @var WPSEO_Metabox_Analysis_SEO
 	 */
 	private $analysis_seo;
 
 	/**
+	 * The readability analysis.
+	 *
 	 * @var WPSEO_Metabox_Analysis_Readability
 	 */
 	private $analysis_readability;
 
 	/**
-	 * @var string The current taxonomy
+	 * The current taxonomy.
+	 *
+	 * @var string
 	 */
 	private $taxonomy;
 
@@ -33,8 +39,8 @@ class WPSEO_Taxonomy_Columns {
 		$this->taxonomy = $this->get_taxonomy();
 
 		if ( ! empty( $this->taxonomy ) ) {
-			add_filter( 'manage_edit-' . $this->taxonomy . '_columns', array( $this, 'add_columns' ) );
-			add_filter( 'manage_' . $this->taxonomy . '_custom_column', array( $this, 'parse_column' ), 10, 3 );
+			add_filter( 'manage_edit-' . $this->taxonomy . '_columns', [ $this, 'add_columns' ] );
+			add_filter( 'manage_' . $this->taxonomy . '_custom_column', [ $this, 'parse_column' ], 10, 3 );
 		}
 
 		$this->analysis_seo         = new WPSEO_Metabox_Analysis_SEO();
@@ -53,7 +59,7 @@ class WPSEO_Taxonomy_Columns {
 			return $columns;
 		}
 
-		$new_columns = array();
+		$new_columns = [];
 
 		foreach ( $columns as $column_name => $column_value ) {
 			$new_columns[ $column_name ] = $column_value;
@@ -73,9 +79,9 @@ class WPSEO_Taxonomy_Columns {
 	/**
 	 * Parses the column.
 	 *
-	 * @param string  $content     The current content of the column.
-	 * @param string  $column_name The name of the column.
-	 * @param integer $term_id     ID of requested taxonomy.
+	 * @param string $content     The current content of the column.
+	 * @param string $column_name The name of the column.
+	 * @param int    $term_id     ID of requested taxonomy.
 	 *
 	 * @return string
 	 */
@@ -107,7 +113,7 @@ class WPSEO_Taxonomy_Columns {
 	 * @return string|null
 	 */
 	private function get_taxonomy() {
-		if ( defined( 'DOING_AJAX' ) && DOING_AJAX === true ) {
+		if ( wp_doing_ajax() ) {
 			return FILTER_INPUT( INPUT_POST, 'taxonomy' );
 		}
 
@@ -117,7 +123,7 @@ class WPSEO_Taxonomy_Columns {
 	/**
 	 * Parses the value for the score column.
 	 *
-	 * @param integer $term_id ID of requested term.
+	 * @param int $term_id ID of requested term.
 	 *
 	 * @return string
 	 */
@@ -157,7 +163,7 @@ class WPSEO_Taxonomy_Columns {
 	/**
 	 * Creates an icon by the given values.
 	 *
-	 * @param WPSEO_Rank $rank The ranking object.
+	 * @param WPSEO_Rank $rank  The ranking object.
 	 * @param string     $title Optional. The title to show. Defaults to the rank label.
 	 *
 	 * @return string The HTML for a score icon.
@@ -231,7 +237,7 @@ class WPSEO_Taxonomy_Columns {
 	 *
 	 * @since 7.0
 	 *
-	 * @param string $taxonomy Optional. The taxonomy to test, defaults to the current taxonomy.
+	 * @param string|null $taxonomy Optional. The taxonomy to test, defaults to the current taxonomy.
 	 *
 	 * @return bool Whether or not the meta box (and associated columns etc) should be hidden.
 	 */

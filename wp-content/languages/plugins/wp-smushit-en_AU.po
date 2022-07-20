@@ -1,0 +1,2059 @@
+# Translation of Plugins - Smush &#8211; Lazy Load Images, Optimize &amp; Compress Images - Stable (latest release) in English (Australia)
+# This file is distributed under the same license as the Plugins - Smush &#8211; Lazy Load Images, Optimize &amp; Compress Images - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-02-20 08:17:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: en_AU\n"
+"Project-Id-Version: Plugins - Smush &#8211; Lazy Load Images, Optimize &amp; Compress Images - Stable (latest release)\n"
+
+#: app/pages/class-bulk.php:251
+msgid "As of WordPress 5.3, large image uploads are resized down to a specified max width and height. If you require images larger than 2560px, you can override this setting here."
+msgstr "As of WordPress 5.3, large image uploads are resized down to a specified max width and height. If you require images larger than 2560px, you can override this setting here."
+
+#: core/class-helper.php:287
+msgid "Couldn't process image due to bad headers. Try re-saving the image in an image editor, then upload it again."
+msgstr "Couldn't process image due to bad headers. Try resaving the image in an image editor, then upload it again."
+
+#: app/common/footer-plugins-upsell.php:67
+msgid "Your All-in-One WordPress Platform"
+msgstr "Your All-in-One WordPress Platform"
+
+#. translators: %s1$d - bulk smush limit, %2$s - upgrade link, %3$s - </a>,
+#. %4$s - <strong>, $5$s - </strong>
+#: app/common/progress-bar.php:40
+msgid "The free version of Smush allows you to compress %1$d images at a time. %2$sUpgrade to Pro for FREE%3$s to compress unlimited images at once or click Resume to compress another %1$d images."
+msgstr "The free version of Smush allows you to compress %1$d images at a time. %2$sUpgrade to Pro for FREE%3$s to compress unlimited images at once or click Resume to compress another %1$d images."
+
+#: app/views/smush-upgrade-page.php:161
+msgid "Get Smush Pro, and get a faster WordPress"
+msgstr "Get Smush Pro, and get a faster WordPress"
+
+#: app/views/smush-upgrade-page.php:159
+msgid "97% of customers are happy with WPMU DEV's service, and it’s a great time to join them: as a Smush user you’ll get a free trial, so you can see what all the fuss is about."
+msgstr "97% of customers are happy with WPMU DEV's service, and it’s a great time to join them: as a Smush user you’ll get a free trial, so you can see what all the fuss is about."
+
+#: app/views/dashboard/upsell/meta-box.php:44
+#: app/views/smush-upgrade-page.php:151
+msgid "The WPMU DEV Guarantee"
+msgstr "The WPMU DEV Guarantee"
+
+#: app/views/smush-upgrade-page.php:147
+msgid "We can’t stress this enough: our outstanding WordPress support is available with live chat 24/7, and we’ll help you with absolutely any WordPress issue – not just our products. It’s an expert WordPress team on call for you, whenever you need them."
+msgstr "We can’t stress this enough: our outstanding WordPress support is available with live chat 24/7, and we’ll help you with absolutely any WordPress issue – not just our products. It’s an expert WordPress team on call for you, whenever you need them."
+
+#: app/views/smush-upgrade-page.php:152
+msgid "You'll be delighted with Smush Pro. You've got a no risk free trial to test the WPMU DEV Membership, and if you continue but change your mind, you can cancel any time."
+msgstr "You'll be delighted with Smush Pro. You've got a no risk free trial to test the WPMU DEV Membership, and if you continue but change your mind, you can cancel any time."
+
+#: app/views/dashboard/upsell/meta-box.php:40
+#: app/views/smush-upgrade-page.php:146
+msgid "24/7 live WordPress support"
+msgstr "24/7 live WordPress support"
+
+#: app/views/smush-upgrade-page.php:141
+msgid "The Hub - Manage unlimited WordPress sites"
+msgstr "The Hub - Manage unlimited WordPress sites"
+
+#: app/views/smush-upgrade-page.php:132
+msgid "You’ll get our full suite of premium WordPress plugins, making sure from Security to Backups to Marketing and SEO you’ve got all the WordPress solutions you can possible need. You get unlimited usage on unlimited sites, and can join the millions using our plugins."
+msgstr "You’ll get our full suite of premium WordPress plugins, making sure from Security to Backups to Marketing and SEO you’ve got all the WordPress solutions you can possible need. You get unlimited usage on unlimited sites, and can join the millions using our plugins."
+
+#: app/views/smush-upgrade-page.php:131
+msgid "Premium WordPress plugins"
+msgstr "Premium WordPress plugins"
+
+#: app/views/smush-upgrade-page.php:122
+msgid "Smush looks for additional savings and automatically converts PNG files to JPEG if it will further reduce the size without a visible drop in quality. Now that's smart image compression."
+msgstr "Smush looks for additional savings and automatically converts PNG files to JPEG if it will further reduce the size without a visible drop in quality. Now that's smart image compression."
+
+#: app/views/smush-upgrade-page.php:117
+msgid "Use the blazing-fast Smush image CDN to automatically resize your files to the perfect size and serve WebP files 25% smaller than PNG and JPG compression from 45 locations around the globe."
+msgstr "Use the blazing-fast Smush image CDN to automatically resize your files to the perfect size and serve WebP files 25% smaller than PNG and JPG compression from 45 locations around the globe."
+
+#: app/views/smush-upgrade-page.php:112
+msgid "Smush Pro users get unlimited access to Super-Smush advanced multi-pass lossy compression increasing savings by more than 2x on average without any visible loss in quality."
+msgstr "Smush Pro users get unlimited access to Super-Smush advanced multi-pass lossy compression increasing savings by more than 2x on average without any visible loss in quality."
+
+#: app/views/smush-upgrade-page.php:111
+msgid "More than double your savings with Super-Smush"
+msgstr "More than double your savings with Super-Smush"
+
+#: app/views/pro-features/meta-box.php:93 app/views/smush-upgrade-page.php:106
+msgid "No limits, no restrictions"
+msgstr "No limits, no restrictions"
+
+#: app/views/pro-features/meta-box.php:66 app/views/smush-upgrade-page.php:98
+msgid "Upgrading to Pro will get you the following benefits."
+msgstr "Upgrading to Pro will get you the following benefits."
+
+#: app/views/smush-upgrade-page.php:31
+msgid "customers"
+msgstr "customers"
+
+#: app/views/smush-upgrade-page.php:31
+msgid "5.0 rating from"
+msgstr "5.0 rating from"
+
+#: app/views/smush-upgrade-page.php:24
+msgid "Get Smush Pro and bulk optimize every image you’ve ever added to your site with one-click. Save 2x more with lossy Super-Smush. Serve stunning, high-quality images from 45 locations around the globe with our blazing-fast CDN."
+msgstr "Get Smush Pro and bulk optimise every image you’ve ever added to your site with one-click. Save 2x more with lossy Super-Smush. Serve stunning, high-quality images from 45 locations around the globe with our blazing-fast CDN."
+
+#: app/class-admin.php:284
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: app/views/tools/meta-box.php:28
+msgid "Made a mistake? Use this feature to restore your image thumbnails to their original state."
+msgstr "Made a mistake? Use this feature to restore your image thumbnails to their original state."
+
+#: app/views/settings/permissions-meta-box.php:23
+msgid "By default, subsites will inherit your network settings. Choose which modules you want to allow subsite admins to override."
+msgstr "By default, subsites will inherit your network settings. Choose which modules you want to allow subsite admins to override."
+
+#: app/views/settings/permissions-meta-box.php:20
+#: _src/react/modules/configs.jsx:152
+#: app/assets/js/smush-react-configs.min.js:6264
+msgid "Subsite Controls"
+msgstr "Subsite Controls"
+
+#: core/modules/class-cdn.php:893
+msgid "Too many requests, please try again in a moment."
+msgstr "Too many requests, please try again in a moment."
+
+#. translators: %1$s - link, %2$s - closing link tag
+#: core/modules/class-cdn.php:286
+msgid "For any non-media library uploads, you can still use the %1$sDirectory Smush%2$s feature to compress them, they just won’t be served from the CDN."
+msgstr "For any non-media library uploads, you can still use the %1$sDirectory Smush%2$s feature to compress them, they just won’t be served from the CDN."
+
+#. translators: %1$s - link, %2$s - closing link tag
+#: core/modules/class-cdn.php:279
+msgid "Note: For this feature to work your theme’s background images must be declared correctly using the default %1$swp_attachment%2$s functions."
+msgstr "Note: For this feature to work your theme’s background images must be declared correctly using the default %1$swp_attachment%2$s functions."
+
+#: core/modules/class-cdn.php:223
+msgid "Where possible we will serve background images declared with CSS directly from the CDN."
+msgstr "Where possible we will serve background images declared with CSS directly from the CDN."
+
+#: core/modules/class-cdn.php:222
+msgid "Background Images"
+msgstr "Background Images"
+
+#: app/views/cdn/upsell-meta-box.php:37 core/modules/class-cdn.php:221
+msgid "Serve background images from the CDN"
+msgstr "Serve background images from the CDN"
+
+#: app/views/lazyload/meta-box.php:303
+msgid "Background color"
+msgstr "Background colour"
+
+#. translators: %1$s - <a> link, %2$s - </a>
+#: app/views/settings/data-meta-box.php:40
+msgid "Navigate to %1$sTools%2$s to begin the process."
+msgstr "Navigate to %1$sTools%2$s to begin the process."
+
+#: app/views/settings/data-meta-box.php:35
+msgid "Made a mistake? No worries. We have a built-in bulk restore tool that will restore your image thumbnails to their original state."
+msgstr "Made a mistake? No worries. We have a built-in bulk restore tool that will restore your image thumbnails to their original state."
+
+#: app/views/settings/permissions-meta-box.php:64
+msgid "Choose which modules settings subsite admins have access to."
+msgstr "Choose which modules settings subsite admins have access to."
+
+#: app/views/settings/permissions-meta-box.php:58
+msgid "Subsite admins can override all module settings."
+msgstr "Subsite admins can override all module settings."
+
+#: app/views/settings/permissions-meta-box.php:50
+msgid "Subsite admins can't override any module settings and will always inherit your network settings."
+msgstr "Subsite admins can't override any module settings and will always inherit your network settings."
+
+#: app/views/lazyload/meta-box.php:323
+msgid "Images will flash into view as soon as they are ready to display."
+msgstr "Images will flash into view as soon as they are ready to display."
+
+#: app/views/lazyload/meta-box.php:313
+msgid "Select"
+msgstr "Select"
+
+#: app/views/lazyload/meta-box.php:262 app/views/lazyload/meta-box.php:275
+msgid "Placeholder image"
+msgstr "Placeholder image"
+
+#: app/views/lazyload/meta-box.php:255
+msgid "Image"
+msgstr "Image"
+
+#: app/views/lazyload/meta-box.php:253
+msgid "Display a placeholder to display instead of the actual image during lazy loading. You can choose a predefined image, or upload your own."
+msgstr "Display a placeholder to display instead of the actual image during lazy loading. You can choose a predefined image, or upload your own."
+
+#: app/views/lazyload/meta-box.php:243 app/views/lazyload/meta-box.php:295
+msgid "Remove file"
+msgstr "Remove file"
+
+#: app/views/lazyload/meta-box.php:238 app/views/lazyload/meta-box.php:290
+msgid "Upload file"
+msgstr "Upload file"
+
+#: app/views/lazyload/meta-box.php:209 app/views/lazyload/meta-box.php:223
+msgid "Spinner image"
+msgstr "Spinner image"
+
+#: app/views/lazyload/meta-box.php:200
+msgid "Display a spinner where the image will be during lazy loading. You can choose a predefined spinner, or upload your own GIF."
+msgstr "Display a spinner where the image will be during lazy loading. You can choose a predefined spinner, or upload your own GIF."
+
+#: app/views/lazyload/meta-box.php:180
+msgid "Once the image has loaded, choose how you want the image to display when it comes into view."
+msgstr "Once the image has loaded, choose how you want the image to display when it comes into view."
+
+#: app/views/lazyload/meta-box.php:169
+msgid "Placeholder"
+msgstr "Placeholder"
+
+#: app/views/lazyload/meta-box.php:154
+msgid "Choose how you want the non-loaded image to look."
+msgstr "Choose how you want the non-loaded image to look."
+
+#: app/views/lazyload/meta-box.php:152
+msgid "Display"
+msgstr "Display"
+
+#: app/views/lazyload/meta-box.php:148
+msgid "Choose how you want preloading images to be displayed, as well as how they animate into view."
+msgstr "Choose how you want preloading images to be displayed, as well as how they animate into view."
+
+#: app/views/lazyload/meta-box.php:145
+msgid "Display & Animation"
+msgstr "Display & Animation"
+
+#: app/modals/restore-images.php:77
+msgid "Initializing restore..."
+msgstr "Initialising restore…"
+
+#: app/modals/restore-images.php:41
+msgid "Are you sure you want to restore all image thumbnails to their original, non-optimized states?"
+msgstr "Are you sure you want to restore all image thumbnails to their original, unoptimised states?"
+
+#: app/modals/restore-images.php:156
+msgid "Retry"
+msgstr "Retry"
+
+#: app/modals/restore-images.php:140
+msgid "Note: You can find all the images which couldn't be restored (still smushed) in your %1$sMedia Library%2$s."
+msgstr "Note: You can find all the images which couldn't be restored (still smushed) in your %1$sMedia Library%2$s."
+
+#: app/modals/restore-images.php:129
+msgid "View item in Media Library"
+msgstr "View item in Media Library"
+
+#: app/modals/restore-images.php:93 _src/react/views/webp/step-footer.jsx:157
+#: app/assets/js/smush-react-webp.min.js:1314
+msgid "Finish"
+msgstr "Finish"
+
+#: app/modals/restore-images.php:87
+msgid "images were successfully restored."
+msgstr "images were successfully restored."
+
+#: app/modals/restore-images.php:55
+msgid "Confirm"
+msgstr "Confirm"
+
+#: app/modals/restore-images.php:45
+msgid "Your bulk restore has finished running."
+msgstr "Your bulk restore has finished running."
+
+#: app/modals/restore-images.php:43
+msgid "Your bulk restore is still in progress, please leave this tab open while the process runs."
+msgstr "Your bulk restore is still in progress, please leave this tab open while the process runs."
+
+#: app/modals/restore-images.php:24 app/views/tools/meta-box.php:36
+msgid "Restore Thumbnails"
+msgstr "Restore Thumbnails"
+
+#: app/modals/restore-images.php:28
+msgid "Restore complete"
+msgstr "Restore complete"
+
+#: app/modals/onboarding.php:91
+msgid "Enable Lazy Loading"
+msgstr "Enable Lazy Loading"
+
+#: app/pages/class-settings.php:149
+msgid "Error detecting language"
+msgstr "Error detecting language"
+
+#: core/integrations/class-composer.php:67
+msgid "Allow smushing images resized in WPBakery Page Builder editor."
+msgstr "Allow smushing images resized in WPBakery Page Builder editor."
+
+#: core/integrations/class-composer.php:66
+msgid "WPBakery Page Builder"
+msgstr "WPBakery Page Builder"
+
+#: core/integrations/class-composer.php:65
+msgid "Enable WPBakery Page Builder integration"
+msgstr "Enable WPBakery Page Builder integration"
+
+#: app/views/settings/data-meta-box.php:83
+msgid "If you're having issues with enabling pro features you can force the API to update your membership status here."
+msgstr "If you're having issues with enabling pro features you can force the API to update your membership status here."
+
+#: app/views/settings/data-meta-box.php:81
+msgid "API Status"
+msgstr "API Status"
+
+#: core/class-settings.php:263
+msgid "This will add functionality to your website that highlights images that are either too large or too small for their containers."
+msgstr "This will add functionality to your website that highlights images that are either too large or too small for their containers."
+
+#: app/views/dashboard/tools-meta-box.php:33 core/class-settings.php:262
+msgid "Image Resize Detection"
+msgstr "Image Resize Detection"
+
+#: core/class-settings.php:237
+msgid "Automatic compression"
+msgstr "Automatic compression"
+
+#: core/class-settings.php:233
+msgid "WordPress generates multiple image thumbnails for each image you upload. Choose which of those thumbnail sizes you want to include when bulk smushing."
+msgstr "WordPress generates multiple image thumbnails for each image you upload. Choose which of those thumbnail sizes you want to include when bulk smushing."
+
+#: core/class-settings.php:232
+msgid "Image Sizes"
+msgstr "Image Sizes"
+
+#. translators: %1$d - attachment ID, %2$s - error.
+#: core/class-cli.php:197
+msgid "Error compressing image (ID: %1$d). %2$s"
+msgstr "Error compressing image (ID: %1$d). %2$s"
+
+#: app/class-abstract-summary-page.php:276
+#: app/views/dashboard/cdn/meta-box.php:80
+#: app/views/dashboard/integrations-meta-box.php:51
+#: app/views/dashboard/summary-meta-box.php:83
+#: app/views/dashboard/summary-meta-box.php:108
+#: app/views/dashboard/summary-meta-box.php:130
+#: app/views/dashboard/tools-meta-box.php:37 core/class-configs.php:616
+msgid "Active"
+msgstr "Active"
+
+#: app/class-abstract-summary-page.php:271
+msgid "Activating"
+msgstr "Activating"
+
+#: app/class-abstract-summary-page.php:268
+msgid "Needs upgrade"
+msgstr "Needs upgrade"
+
+#: app/class-abstract-summary-page.php:265
+msgid "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service"
+msgstr "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service"
+
+#: app/class-abstract-summary-page.php:263
+#: app/views/dashboard/summary-meta-box.php:75
+#: app/views/dashboard/summary-meta-box.php:80
+msgid "Overcap"
+msgstr "Overcap"
+
+#: app/class-abstract-summary-page.php:260
+msgid "You've gone through your CDN bandwidth limit, so we’ve stopped serving your images via the CDN. Contact your administrator to upgrade your Smush CDN plan to reactivate this service"
+msgstr "You've gone through your CDN bandwidth limit, so we’ve stopped serving your images via the CDN. Contact your administrator to upgrade your Smush CDN plan to reactivate this service"
+
+#: core/api/class-request.php:299
+msgid "[WPMUDEV API] Skipped sync due to API error exponential backoff."
+msgstr "[WPMUDEV API] Skipped sync due to API error exponential backoff."
+
+#: app/views/bulk/meta-box.php:25 app/views/nextgen/meta-box.php:22
+msgid "Bulk smush detects images that can be optimized and allows you to compress them in bulk."
+msgstr "Bulk smush detects images that can be optimised and allows you to compress them in bulk."
+
+#: app/views/settings/data-meta-box.php:91
+msgid "Update API status"
+msgstr "Update API status"
+
+#: app/common/progress-bar.php:81 app/modals/progress-dialog.php:70
+msgid "Resume"
+msgstr "Resume"
+
+#. translators: %s1$d - bulk smush limit, %2$s - upgrade link, %3$s - </a>,
+#. %4$s - <strong>, $5$s - </strong>
+#: app/modals/progress-dialog.php:58
+msgid "The free version of Smush allows you to compress %1$d images at a time. You can easily click %4$sResume%5$s to optimize another %1$d images, or %2$sUpgrade to Pro%3$s to compress unlimited images at once."
+msgstr "The free version of Smush allows you to compress %1$d images at a time. You can easily click %4$sResume%5$s to optimise another %1$d images, or %2$sUpgrade to Pro%3$s to compress unlimited images at once."
+
+#. translators: %1$s - starting a tag, %2$s - closing a tag
+#: app/pages/class-cdn.php:94
+msgid "You've gone through your CDN bandwidth limit, so we’ve stopped serving your images via the CDN. Contact your administrator to upgrade your Smush CDN plan to reactivate this service. %1$sUpgrade now%2$s"
+msgstr "You've gone through your CDN bandwidth limit, so we’ve stopped serving your images via the CDN. Contact your administrator to upgrade your Smush CDN plan to reactivate this service. %1$sUpgrade now%2$s"
+
+#: app/modals/onboarding.php:60
+msgid "You can also have Smush compress your original images - this is helpful if your theme serves full size images."
+msgstr "You can also have Smush compress your original images - this is helpful if your theme serves full size images."
+
+#. translators: %1$s - starting a tag, %2$s - closing a tag
+#: app/pages/class-cdn.php:85
+msgid "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service. %1$sUpgrade now%2$s"
+msgstr "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service. %1$sUpgrade now%2$s"
+
+#: app/class-abstract-summary-page.php:273 app/pages/class-cdn.php:74
+msgid "Your media is currently being served from the WPMU DEV CDN. Bulk and Directory smush features are treated separately and will continue to run independently."
+msgstr "Your media is currently being served from the WPMU DEV CDN. Bulk and Directory smush features are treated separately and will continue to run independently."
+
+#: app/pages/class-bulk.php:334
+msgid "Included image sizes"
+msgstr "Included image sizes"
+
+#: app/pages/class-bulk.php:328 app/views/settings/permissions-meta-box.php:41
+msgid "Custom"
+msgstr "Custom"
+
+#: app/pages/class-bulk.php:324 app/views/settings/permissions-meta-box.php:37
+#: core/class-configs.php:693
+msgid "All"
+msgstr "All"
+
+#: app/pages/class-bulk.php:292
+msgid "Note: We will only automatically compress the image sizes selected above."
+msgstr "Note: We will only automatically compress the image sizes selected above."
+
+#: app/pages/class-tools.php:89
+msgid "Note: The highlighting will only be visible to administrators – visitors won’t see the highlighting."
+msgstr "Note: The highlighting will only be visible to administrators – visitors won’t see the highlighting."
+
+#: app/class-admin.php:311 app/pages/class-dashboard.php:104
+#: app/pages/class-tools.php:37 app/views/dashboard/cdn/meta-box.php:67
+#: app/views/settings/permissions-meta-box.php:90
+#: _src/react/modules/configs.jsx:150
+#: app/assets/js/smush-react-configs.min.js:6262
+msgid "Tools"
+msgstr "Tools"
+
+#: app/class-admin.php:295 app/modals/onboarding.php:44
+#: app/modals/onboarding.php:149 app/pages/class-dashboard.php:140
+#: app/pages/class-lazy.php:30 app/pages/class-lazy.php:45
+#: app/views/dashboard/summary-meta-box.php:125
+#: app/views/settings/permissions-meta-box.php:80 core/class-configs.php:581
+#: _src/react/modules/configs.jsx:147
+#: app/assets/js/smush-react-configs.min.js:6259
+msgid "Lazy Load"
+msgstr "Lazy Load"
+
+#: app/class-abstract-page.php:310
+msgid "Log In"
+msgstr "Log In"
+
+#: app/class-abstract-page.php:305
+msgid "Smush Pro requires the WPMU DEV Dashboard plugin to unlock pro features. Please make sure you have installed, activated and logged into the Dashboard."
+msgstr "Smush Pro requires the WPMU DEV Dashboard plugin to unlock pro features. Please make sure you have installed, activated and logged into the Dashboard."
+
+#: app/views/settings/data-meta-box.php:48
+msgid "Uninstallation"
+msgstr "Uninstallation"
+
+#: core/modules/class-resize-detection.php:132
+msgid "Undersized"
+msgstr "Undersized"
+
+#. translators: %d - attachment ID
+#: app/class-ajax.php:865
+msgid "undefined (attachment ID: %d)"
+msgstr "undefined (attachment ID: %d)"
+
+#: app/class-media-library.php:717
+msgid "Show in bulk Smush"
+msgstr "Show in bulk Smush"
+
+#: app/modals/reset-settings.php:41
+msgid "Reset settings"
+msgstr "Reset settings"
+
+#: app/class-ajax.php:862
+msgid "No file data found in image meta."
+msgstr "No file data found in image meta."
+
+#: app/class-ajax.php:834
+msgid "No attachment ID was received."
+msgstr "No attachment ID was received."
+
+#: core/class-core.php:288
+msgid "Ignore this image from bulk smushing"
+msgstr "Ignore this image from bulk smushing"
+
+#: app/views/settings/data-meta-box.php:25
+msgid "Data"
+msgstr "Data"
+
+#: app/views/settings/data-meta-box.php:27
+msgid "Choose how you want us to handle your plugin data."
+msgstr "Choose how you want us to handle your plugin data."
+
+#: app/modals/reset-settings.php:31
+msgid "Are you sure you want to reset Smush’s settings back to the factory defaults?"
+msgstr "Are you sure you want to reset Smush’s settings back to the factory defaults?"
+
+#: app/views/lazyload/meta-box.php:599
+msgid "Your theme must be using the wp_footer() function."
+msgstr "Your theme must be using the wp_footer() function."
+
+#: app/views/lazyload/meta-box.php:568
+msgid "Scripts"
+msgstr "Scripts"
+
+#: app/views/lazyload/meta-box.php:699
+msgid "No longer wish to use this feature? Turn it off instantly by hitting Deactivate."
+msgstr "No longer wish to use this feature? Turn it off instantly by hitting Deactivate."
+
+#: app/views/lazyload/meta-box.php:576
+msgid "Method"
+msgstr "Method"
+
+#: app/views/lazyload/meta-box.php:590
+msgid "Header"
+msgstr "Header"
+
+#: app/views/lazyload/meta-box.php:585
+msgid "Footer"
+msgstr "Footer"
+
+#: app/views/lazyload/meta-box.php:540
+msgid "Classes & IDs"
+msgstr "Classes & IDs"
+
+#: app/views/lazyload/meta-box.php:571 app/views/lazyload/meta-box.php:578
+msgid "By default we will load the required scripts in your footer for max performance benefits. If you are having issues, you can switch this to the header."
+msgstr "By default we will load the required scripts in your footer for max performance benefits. If you are having issues, you can switch this to the header."
+
+#. translators: %1$s - opening strong tag, %2$s - closing strong tag
+#: app/views/lazyload/meta-box.php:531
+msgid "Add page or post URLs one per line in relative format. I.e. %1$s/example-page%2$s or %1$s/example-page/sub-page/%2$s."
+msgstr "Add page or post URLs one per line in relative format. I.e. %1$s/example-page%2$s or %1$s/example-page/sub-page/%2$s."
+
+#: app/views/lazyload/meta-box.php:550
+msgid "Add classes or IDs, one per line"
+msgstr "Add classes or IDs, one per line"
+
+#. translators: %1$s - opening strong tag, %2$s - closing strong tag
+#: app/views/lazyload/meta-box.php:555
+msgid "Add one class or ID per line, including the prefix. E.g %1$s#image-id%2$s or %1$s.image-class%2$s."
+msgstr "Add one class or ID per line, including the prefix. E.g %1$s#image-id%2$s or %1$s.image-class%2$s."
+
+#: app/views/lazyload/meta-box.php:542
+msgid "Additionally, you can specify classes or IDs to avoid lazy loading. This gives you absolute control over each image on a page, not just the page itself."
+msgstr "Additionally, you can specify classes or IDs to avoid lazy loading. This gives you absolute control over each image on a page, not just the page itself."
+
+#: app/views/lazyload/meta-box.php:125
+msgid "Widgets"
+msgstr "Widgets"
+
+#: app/views/settings/data-meta-box.php:50
+msgid "When you uninstall the plugin, what do you want to do with your settings? You can save them for next time, or wipe them back to factory settings."
+msgstr "When you uninstall the plugin, what do you want to do with your settings? You can save them for next time, or wipe them back to factory settings."
+
+#: app/views/lazyload/meta-box.php:415
+msgid "Type"
+msgstr "Type"
+
+#: app/views/lazyload/meta-box.php:487
+msgid "Tags"
+msgstr "Tags"
+
+#: app/views/lazyload/meta-box.php:165 app/views/lazyload/meta-box.php:202
+msgid "Spinner"
+msgstr "Spinner"
+
+#: app/common/meta-box-footer.php:16
+msgid "Saving changes..."
+msgstr "Saving changes..."
+
+#: app/modals/reset-settings.php:27 app/views/settings/data-meta-box.php:74
+msgid "Reset Settings"
+msgstr "Reset Settings"
+
+#: app/views/settings/data-meta-box.php:67
+msgid "Reset Factory Settings"
+msgstr "Reset Factory Settings"
+
+#: app/views/lazyload/meta-box.php:454
+msgid "Posts"
+msgstr "Posts"
+
+#: app/views/lazyload/meta-box.php:516
+msgid "Post, Pages & URLs"
+msgstr "Post, Pages & URLs"
+
+#: app/views/lazyload/meta-box.php:407
+msgid "Post Types"
+msgstr "Post Types"
+
+#: app/views/lazyload/meta-box.php:131
+msgid "Post Thumbnail"
+msgstr "Post Thumbnail"
+
+#: app/views/lazyload/meta-box.php:443
+msgid "Pages"
+msgstr "Pages"
+
+#: app/views/lazyload/meta-box.php:108 core/class-configs.php:634
+msgid "Output Locations"
+msgstr "Output Locations"
+
+#: app/pages/class-tools.php:98
+msgid "Note: Images served via the Smush CDN are automatically resized to fit their containers, these will be skipped."
+msgstr "Note: Images served via the Smush CDN are automatically resized to fit their containers, these will be skipped."
+
+#: app/views/lazyload/meta-box.php:173
+#: app/views/settings/permissions-meta-box.php:33 core/class-configs.php:693
+msgid "None"
+msgstr "None"
+
+#: app/views/settings/data-meta-box.php:69
+msgid "Need to revert back to the default settings? This button will instantly reset your settings to the defaults."
+msgstr "Need to revert back to the default settings? This button will instantly reset your settings to the defaults."
+
+#: app/views/lazyload/meta-box.php:414
+msgid "Name"
+msgstr "Name"
+
+#: app/views/lazyload/meta-box.php:187 app/views/lazyload/meta-box.php:193
+msgid "ms"
+msgstr "ms"
+
+#: app/views/lazyload/meta-box.php:59 core/class-configs.php:633
+msgid "Media Types"
+msgstr "Media Types"
+
+#: app/views/settings/data-meta-box.php:57
+msgid "Keep"
+msgstr "Keep"
+
+#: app/views/lazyload/meta-box.php:137
+msgid "Gravatars"
+msgstr "Gravatars"
+
+#: app/views/lazyload/meta-box.php:161
+msgid "Fade In"
+msgstr "Fade In"
+
+#: app/views/lazyload/meta-box.php:526
+msgid "E.g. /page"
+msgstr "E.g. /page"
+
+#: app/views/lazyload/meta-box.php:184
+msgid "Duration"
+msgstr "Duration"
+
+#: app/modals/webp-delete-all.php:56 app/views/settings/data-meta-box.php:62
+#: _src/react/modules/configs.jsx:61 _src/react/modules/configs.jsx:119
+#: app/assets/js/smush-react-configs.min.js:6173
+#: app/assets/js/smush-react-configs.min.js:6231
+msgid "Delete"
+msgstr "Delete"
+
+#: app/views/lazyload/meta-box.php:190
+msgid "Delay"
+msgstr "Delay"
+
+#: app/views/lazyload/meta-box.php:119
+msgid "Content"
+msgstr "Content"
+
+#: app/views/lazyload/meta-box.php:476
+msgid "Categories"
+msgstr "Categories"
+
+#: app/views/lazyload/meta-box.php:432
+msgid "Blog"
+msgstr "Blog"
+
+#: app/views/lazyload/meta-box.php:465
+msgid "Archives"
+msgstr "Archives"
+
+#: app/views/lazyload/meta-box.php:178
+msgid "Animation"
+msgstr "Animation"
+
+#: app/views/lazyload/meta-box.php:94
+msgid ".svg"
+msgstr ".svg"
+
+#: app/views/lazyload/meta-box.php:76
+msgid ".png"
+msgstr ".png"
+
+#: app/views/lazyload/meta-box.php:70
+msgid ".jpeg"
+msgstr ".jpeg"
+
+#: app/views/lazyload/meta-box.php:88
+msgid ".gif"
+msgstr ".gif"
+
+#: app/views/lazyload/meta-box.php:518
+msgid "Add URLs to the posts and/or pages you want to disable lazy loading on."
+msgstr "Add URLs to the posts and/or pages you want to disable lazy loading on."
+
+#: app/views/lazyload/meta-box.php:421
+msgid "Frontpage"
+msgstr "Front page"
+
+#: app/views/lazyload/meta-box.php:409
+msgid "Choose the post types you want to lazy load."
+msgstr "Choose the post types you want to lazy load."
+
+#: app/views/lazyload/meta-box.php:402
+msgid "Disable lazy loading for specific pages, posts or image classes that you wish to prevent lazyloading on."
+msgstr "Disable lazy loading for specific pages, posts or image classes that you wish to prevent lazy loading on."
+
+#: app/views/lazyload/meta-box.php:111
+msgid "By default we will lazy load all images, but you can refine this to specific media outputs too."
+msgstr "By default we will lazy load all images, but you can refine this to specific media outputs too."
+
+#: app/views/lazyload/meta-box.php:62
+msgid "Choose which media types you want to lazy load."
+msgstr "Choose which media types you want to lazy load."
+
+#: app/views/dashboard/lazy-load-meta-box.php:32
+#: app/views/lazyload/meta-box.php:34
+msgid "Lazy loading is active."
+msgstr "Lazy loading is active."
+
+#: app/views/lazyload/meta-box.php:399
+msgid "Include/Exclude"
+msgstr "Include/Exclude"
+
+#: core/class-settings.php:288
+msgid "Help make Smush better by letting our designers learn how you’re using the plugin."
+msgstr "Help make Smush better by letting our designers learn how you’re using the plugin."
+
+#: core/class-settings.php:287
+msgid "Usage Tracking"
+msgstr "Usage Tracking"
+
+#: core/class-settings.php:283
+msgid "Increase the visibility and accessibility of elements and components to meet WCAG AAA requirements."
+msgstr "Increase the visibility and accessibility of elements and components to meet WCAG AAA requirements."
+
+#: core/class-settings.php:282
+msgid "Color Accessibility"
+msgstr "Colour Accessibility"
+
+#: core/class-settings.php:281
+msgid "Enable high contrast mode"
+msgstr "Enable high contrast mode"
+
+#: core/class-cli.php:290
+msgid "All images restored"
+msgstr "All images restored"
+
+#: core/class-cli.php:288
+msgid "There were issues restoring some images"
+msgstr "There were issues restoring some images"
+
+#: core/class-cli.php:270
+msgid "Restoring images"
+msgstr "Restoring images"
+
+#: core/class-cli.php:263
+msgid "Image with defined ID not found"
+msgstr "Image with defined ID not found"
+
+#: core/class-cli.php:257
+msgid "No images available to restore"
+msgstr "No images available to restore"
+
+#: core/class-cli.php:241
+msgid "All images compressed"
+msgstr "All images compressed"
+
+#: core/class-cli.php:214
+msgid "Image compressed"
+msgstr "Image compressed"
+
+#. translators: %d - attachment ID
+#: core/class-cli.php:189
+msgid "Image (ID: %d) already compressed"
+msgstr "Image (ID: %d) already compressed"
+
+#: core/class-cli.php:127
+msgid "Unsmushed images:"
+msgstr "Unsmushed images:"
+
+#: core/class-cli.php:123
+msgid "No uncompressed images found"
+msgstr "No uncompressed images found"
+
+#: core/class-cli.php:75
+msgid "Smushing all images"
+msgstr "Smushing all images"
+
+#. translators: %d - number of images
+#: core/class-cli.php:70
+msgid "Smushing first %d images"
+msgstr "Smushing first %d images"
+
+#. translators: %d - image ID
+#: core/class-cli.php:64
+msgid "Smushing image ID: %d"
+msgstr "Smushing image ID: %d"
+
+#: app/views/dashboard/summary-meta-box.php:65
+#: app/views/dashboard/summary-meta-box.php:101
+msgid "Upgrade"
+msgstr "Upgrade"
+
+#: app/class-admin.php:221 app/pages/class-bulk.php:97
+#: app/views/smush-upgrade-page.php:23
+msgid "Upgrade to Smush Pro"
+msgstr "Upgrade to Smush Pro"
+
+#: app/modals/checking-files.php:33
+msgid "Great! We’re just running a check to see what images need compressing. You can configure more advanced settings once this image check is complete."
+msgstr "Great! We’re just running a check to see what images need compressing. You can configure more advanced settings once this image check is complete."
+
+#: app/modals/checking-files.php:28
+msgid "Checking images"
+msgstr "Checking images"
+
+#: app/modals/onboarding.php:174
+msgid "Skip this, I’ll set it up later"
+msgstr "Skip this, I’ll set it up later"
+
+#: app/modals/onboarding.php:113 _src/react/views/webp/step-footer.jsx:117
+#: app/assets/js/smush-react-webp.min.js:1274
+msgid "Next"
+msgstr "Next"
+
+#: app/modals/onboarding.php:107
+msgid "Finish setup wizard"
+msgstr "Finish setup wizard"
+
+#: app/modals/onboarding.php:102
+msgid "Note: By default we will store a copy of your original uploads just in case you want to revert in the future - you can turn this off at any time."
+msgstr "Note: By default we will store a copy of your original uploads just in case you want to revert in the future - you can turn this off at any time."
+
+#: app/modals/onboarding.php:93
+msgid "Allow usage data tracking"
+msgstr "Allow usage data tracking"
+
+#: app/modals/onboarding.php:89
+msgid "Compress my full size images"
+msgstr "Compress my full size images"
+
+#: app/modals/onboarding.php:85
+msgid "Enable enhanced multi-pass lossy compression"
+msgstr "Enable enhanced multi-pass lossy compression"
+
+#: app/modals/onboarding.php:83
+msgid "Automatically optimize new uploads"
+msgstr "Automatically optimise new uploads"
+
+#: app/modals/onboarding.php:73
+msgid "Begin setup"
+msgstr "Begin setup"
+
+#: app/modals/onboarding.php:64
+msgid "Help us improve Smush by letting our product designers gain insight into what features need improvement. We don’t track any personalized data, it’s all basic stuff."
+msgstr "Help us improve Smush by letting our product designers gain insight into what features need improvement. We don’t track any personalised data, it’s all basic stuff."
+
+#: app/modals/onboarding.php:54
+msgid "When you upload images to your site, Smush can automatically optimize and compress them for you saving you having to do this manually."
+msgstr "When you upload images to your site, Smush can automatically optimise and compress them for you saving you having to do this manually."
+
+#: app/modals/onboarding.php:52
+msgid "Nice work installing Smush! Let’s get started by choosing how you want this plugin to work, and then let Smush do all the heavy lifting for you."
+msgstr "Nice work installing Smush! Let’s get started by choosing how you want this plugin to work, and then let Smush do all the heavy lifting for you."
+
+#: app/modals/onboarding.php:40 app/modals/onboarding.php:141
+msgid "EXIF Metadata"
+msgstr "EXIF Metadata"
+
+#: app/modals/onboarding.php:38 app/modals/onboarding.php:137
+msgid "Advanced Compression"
+msgstr "Advanced Compression"
+
+#: app/modals/onboarding.php:36 app/modals/onboarding.php:133
+msgid "Automatic Compression"
+msgstr "Automatic Compression"
+
+#. translators: %s: current user name
+#: app/modals/onboarding.php:33
+msgid "Hey, %s!"
+msgstr "Hey, %s!"
+
+#: app/modals/onboarding.php:23
+msgid "Smush Onboarding Modal"
+msgstr "Smush Onboarding Modal"
+
+#: app/modals/onboarding.php:46 app/modals/onboarding.php:153
+msgid "Usage Data"
+msgstr "Usage Data"
+
+#: app/pages/class-settings.php:121
+msgid "Note: Usage tracking is completely anonymous. We are only tracking what features you are/aren’t using to make our feature decisions more informed."
+msgstr "Note: Usage tracking is completely anonymous. We are only tracking what features you are/aren’t using to make our feature decisions more informed."
+
+#: app/class-media-library.php:314
+msgid "Select an image to view Smush stats."
+msgstr "Select an image to view Smush stats."
+
+#: app/class-ajax.php:1074 app/class-ajax.php:1231
+msgid "User can not modify options"
+msgstr "User cannot modify options"
+
+#: core/modules/class-cdn.php:260
+msgid ""
+"Note: We’ll detect and serve WebP images to browsers that will accept them by checking\n"
+"\t\t\t\t\t\tAccept Headers, and gracefully fall back to normal PNGs or JPEGs for non-compatible browsers."
+msgstr ""
+"Note: We’ll detect and serve WebP images to browsers that will accept them by checking\n"
+"\t\t\t\t\t\tAccept Headers, and gracefully fall back to normal PNGs or JPEGs for non-compatible browsers."
+
+#: core/modules/class-cdn.php:231
+msgid "Enable WebP conversion"
+msgstr "Enable WebP conversion"
+
+#: core/modules/class-cdn.php:228
+msgid "If your images don’t match their containers, we’ll automatically serve a correctly sized image."
+msgstr "If your images don’t match their containers, we’ll automatically serve a correctly sized image."
+
+#: core/modules/class-cdn.php:227
+msgid "Automatic Resizing"
+msgstr "Automatic Resizing"
+
+#: core/modules/class-cdn.php:226
+msgid "Enable automatic resizing of my images"
+msgstr "Enable automatic resizing of my images"
+
+#: app/views/dashboard/cdn/meta-box.php:76 core/modules/class-cdn.php:232
+msgid "WebP Conversion"
+msgstr "WebP Conversion"
+
+#: core/api/class-request.php:81
+msgid "Invalid API service."
+msgstr "Invalid API service."
+
+#: app/common/footer-links.php:54 app/common/footer-links.php:79
+#: app/views/smush-upgrade-page.php:194
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: app/common/footer-links.php:51 app/common/footer-links.php:76
+#: app/views/smush-upgrade-page.php:191
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+#: app/common/footer-links.php:36 app/views/smush-upgrade-page.php:176
+msgid "Free Plugins"
+msgstr "Free Plugins"
+
+#: app/common/footer-links.php:73
+msgid "Community"
+msgstr "Community"
+
+#: app/class-admin.php:228 app/common/footer-links.php:45
+#: app/common/footer-links.php:70 app/views/smush-upgrade-page.php:185
+msgid "Docs"
+msgstr "Docs"
+
+#: app/class-admin.php:259 app/common/footer-links.php:42
+#: app/common/footer-links.php:67 app/views/smush-upgrade-page.php:182
+msgid "Support"
+msgstr "Support"
+
+#: app/class-admin.php:271 app/common/footer-links.php:39
+#: app/common/footer-links.php:64 app/views/smush-upgrade-page.php:179
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: app/common/footer-links.php:61
+msgid "Plugins"
+msgstr "Plugins"
+
+#: app/common/footer-links.php:48 app/common/footer-links.php:58
+#: app/views/smush-upgrade-page.php:188
+msgid "The Hub"
+msgstr "The Hub"
+
+#. translators: %d: number of images with errors
+#: app/views/dashboard/directory-meta-box.php:56
+#: app/views/directory/meta-box.php:70
+msgid "Showing 20 of %d failed optimizations. Fix or remove these images and run another Directory Smush."
+msgstr "Showing 20 of %d failed optimisations. Fix or remove these images and run another Directory Smush."
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/settings/general-meta-box.php:48
+msgid "Not using your language, or have improvements? Help us improve translations by providing your own improvements %1$shere%2$s."
+msgstr "Not using your language, or have improvements? Help us improve translations by providing your own improvements %1$share%2$s."
+
+#: app/views/settings/general-meta-box.php:41
+msgid "Active Translation"
+msgstr "Active Translation"
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/settings/general-meta-box.php:31
+msgid "By default, Smush will use the language you’d set in your %1$sWordPress Admin Settings%2$s if a matching translation is available."
+msgstr "By default, Smush will use the language you’d set in your %1$sWordPress Admin Settings%2$s if a matching translation is available."
+
+#: app/views/dashboard/directory-meta-box.php:21
+#: app/views/directory/meta-box.php:25
+msgid "In addition to smushing your media uploads, you may want to smush non WordPress images that are outside of your uploads directory. Get started by adding files and folders you wish to optimize."
+msgstr "In addition to smushing your media uploads, you may want to smush non WordPress images that are outside of your uploads directory. Get started by adding files and folders you wish to optimise."
+
+#: app/views/settings/general-meta-box.php:27
+msgid "Translations"
+msgstr "Translations"
+
+#: app/views/bulk-settings/meta-box.php:26
+msgid "Your images are currently being served via the WPMU DEV CDN. Bulk smush will continue to operate as per your settings below and is treated completely separately in case you ever want to disable the CDN."
+msgstr "Your images are currently being served via the WPMU DEV CDN. Bulk smush will continue to operate as per your settings below and is treated completely separately in case you ever want to disable the CDN."
+
+#: app/views/cdn/meta-box.php:115
+msgid "Note: You won’t lose any images by deactivating, all of your attachments are still stored locally on your own server."
+msgstr "Note: You won’t lose any images by deactivating, all of your attachments are still stored locally on your own server."
+
+#: app/views/cdn/meta-box.php:94 app/views/cdn/meta-box.php:109
+#: app/views/lazyload/meta-box.php:695 app/views/lazyload/meta-box.php:710
+#: app/views/webp/webp-meta-box.php:182 app/views/webp/webp-meta-box.php:194
+msgid "Deactivate"
+msgstr "Deactivate"
+
+#: app/views/cdn/meta-box.php:66
+msgid "webp"
+msgstr "webp"
+
+#: app/views/cdn/meta-box.php:62
+msgid "gif"
+msgstr "gif"
+
+#: app/views/cdn/meta-box.php:59 app/views/webp/webp-meta-box.php:131
+msgid "png"
+msgstr "png"
+
+#: app/views/cdn/meta-box.php:56 app/views/webp/webp-meta-box.php:128
+msgid "jpg"
+msgstr "jpg"
+
+#: app/views/cdn/meta-box.php:98
+msgid "If you no longer require your images to be hosted from our CDN, you can disable this feature."
+msgstr "If you no longer require your images to be hosted from our CDN, you can disable this feature."
+
+#: app/views/cdn/meta-box.php:72
+msgid "At this time, we don’t support videos. We recommend uploading your media to a third-party provider and embedding the videos into your posts/pages."
+msgstr "At this time, we don’t support videos. We recommend uploading your media to a third-party provider and embedding the videos into your posts/pages."
+
+#: app/views/cdn/meta-box.php:50
+msgid "Here’s a list of the media types we serve from the CDN."
+msgstr "Here’s a list of the media types we serve from the CDN."
+
+#: app/views/cdn/meta-box.php:46 app/views/webp/webp-meta-box.php:120
+msgid "Supported Media Types"
+msgstr "Supported Media Types"
+
+#: app/views/cdn/meta-box.php:35
+msgid "Upgrade Plan"
+msgstr "Upgrade Plan"
+
+#: app/common/meta-box-footer.php:28
+msgid "Activating CDN..."
+msgstr "Activating CDN..."
+
+#: app/common/meta-box-footer.php:27
+msgid "Save & Activate"
+msgstr "Save & Activate"
+
+#: app/class-abstract-page.php:239 app/class-abstract-page.php:301
+#: app/views/cdn/disabled-meta-box.php:19 app/views/cdn/upsell-meta-box.php:20
+#: app/views/lazyload/disabled-meta-box.php:18
+msgid "Smush CDN"
+msgstr "Smush CDN"
+
+#: app/views/cdn/meta-box-header.php:23
+#: app/views/dashboard/cdn/meta-box-header.php:21
+#: app/views/dashboard/summary-meta-box.php:68
+#: app/views/dashboard/summary-meta-box.php:104
+#: app/views/dashboard/upsell/meta-box-header.php:19
+#: app/views/dashboard/webp/meta-box-header.php:21
+#: app/views/pro-features/meta-box-header.php:20
+#: app/views/webp/meta-box-header.php:24
+#: core/integrations/class-nextgen.php:704 core/integrations/class-s3.php:331
+#: _src/react/views/webp/steps-bar.jsx:52
+#: app/assets/js/smush-react-webp.min.js:566
+msgid "Pro"
+msgstr "Pro"
+
+#: app/views/cdn/meta-box-header.php:22
+msgid "Join WPMU DEV to host your images on our blazing fast global CDN"
+msgstr "Join WPMU DEV to host your images on our blazing fast global CDN"
+
+#: app/views/dashboard/cdn/meta-box.php:57
+msgid "Your media is currently being served from the WPMU DEV CDN."
+msgstr "Your media is currently being served from the WPMU DEV CDN."
+
+#: app/pages/class-cdn.php:79
+msgid ""
+"Your settings have been saved and changes are now propagating to the CDN. Changes can take up to 30\n"
+"\t\t\t\tminutes to take effect but your images will continue to be served in the mean time, please be patient."
+msgstr ""
+"Your settings have been saved and changes are now propagating to the CDN. Changes can take up to 30\n"
+"\t\t\t\tminutes to take effect but your images will continue to be served in the mean time, please be patient."
+
+#: app/pages/class-cdn.php:78
+msgid "CDN is not yet active. Configure your settings below and click Activate."
+msgstr "CDN is not yet active. Configure your settings below and click Activate."
+
+#: app/pages/class-bulk.php:253
+msgid "Save a ton of space by not storing over-sized images on your server. Set a maximum height and width for all images uploaded to your site so that any unnecessarily large images are automatically resized before they are added to the media gallery. This setting does not apply to images smushed using Directory Smush feature."
+msgstr "Save a ton of space by not storing over-sized images on your server. Set a maximum height and width for all images uploaded to your site so that any unnecessarily large images are automatically resized before they are added to the media gallery. This setting does not apply to images smushed using Directory Smush feature."
+
+#: app/class-abstract-page.php:774
+msgid "Your settings have been saved and changes are now propagating to the CDN. Changes can take up to 30 minutes to take effect but your images will continue to be served in the mean time, please be patient."
+msgstr "Your settings have been saved and changes are now propagating to the CDN. Changes can take up to 30 minutes to take effect but your images will continue to be served in the mean time, please be patient."
+
+#: app/pages/class-tools.php:134
+msgid "Almost there! To finish activating this feature you must save your settings."
+msgstr "Almost there! To finish activating this feature you must save your settings."
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/pages/class-tools.php:116
+msgid "Incorrect image size highlighting is active. %1$sView the frontend%2$s of your website to see if any images aren't the correct size for their containers."
+msgstr "Incorrect image size highlighting is active. %1$sView the front end%2$s of your website to see if any images aren't the correct size for their containers."
+
+#: app/common/progress-bar.php:66
+msgid "Resume scan."
+msgstr "Resume scan."
+
+#: app/views/bulk/meta-box.php:63 app/views/nextgen/meta-box.php:59
+msgid "View all"
+msgstr "View all"
+
+#: core/modules/class-resize-detection.php:139
+msgid "Note: It’s not always easy to make this happen, fix up what you can."
+msgstr "Note: It’s not always easy to make this happen, fix up what you can."
+
+#: core/modules/class-resize-detection.php:129
+msgid "Oversized"
+msgstr "Oversized"
+
+#: core/modules/class-resize-detection.php:123
+msgid "Image Issues"
+msgstr "Image Issues"
+
+#: app/class-media-library.php:241 app/class-media-library.php:311
+msgid "Smush: Bulk ignored"
+msgstr "Smush: Bulk ignored"
+
+#: app/class-media-library.php:239 app/class-media-library.php:309
+msgid "Smush: All images"
+msgstr "Smush: All images"
+
+#: app/class-ajax.php:893
+msgid "Skipped with wp_smush_image filter"
+msgstr "Skipped with wp_smush_image filter"
+
+#: core/modules/class-resize-detection.php:125
+msgid "The images listed below are being resized to fit a container. To avoid serving oversized or blurry images, try to match the images to their container sizes."
+msgstr "The images listed below are being resized to fit a container. To avoid serving oversized or blurry images, try to match the images to their container sizes."
+
+#: core/integrations/class-nextgen.php:178
+msgid "No attachment ID was received"
+msgstr "No attachment ID was received"
+
+#: core/class-core.php:252 core/integrations/nextgen/class-admin.php:200
+msgid "{{smushed}}/{{total}} images were successfully compressed, {{errors}} encountered issues."
+msgstr "{{smushed}}/{{total}} images were successfully compressed, {{errors}} encountered issues."
+
+#: core/class-settings.php:268
+msgid "Choose how you want Smush to handle the original image file when you run a bulk smush."
+msgstr "Choose how you want Smush to handle the original image file when you run a bulk smush."
+
+#: app/modals/progress-dialog.php:96
+msgid "-/- images optimized"
+msgstr "-/- images optimised"
+
+#: app/common/progress-bar.php:64 app/modals/progress-dialog.php:89
+#: app/modals/reset-settings.php:37 app/modals/restore-images.php:52
+#: app/modals/restore-images.php:70 app/modals/restore-images.php:149
+#: app/modals/webp-delete-all.php:49 _src/react/modules/configs.jsx:37
+#: app/assets/js/smush-react-configs.min.js:6149
+msgid "Cancel"
+msgstr "Cancel"
+
+#: app/modals/progress-dialog.php:38
+msgid "Bulk smushing is in progress, you need to leave this tab open until the process completes."
+msgstr "Bulk smushing is in progress, you need to leave this tab open until the process completes."
+
+#: core/integrations/class-gutenberg.php:107
+msgid "To use this feature you need to install and activate the Gutenberg plugin."
+msgstr "To use this feature you need to install and activate the Gutenberg plugin."
+
+#: core/integrations/class-gutenberg.php:74
+msgid ""
+"Add statistics and the manual smush button to Gutenberg blocks that\n"
+"\t\t\t\t\t\t\tdisplay images."
+msgstr ""
+"Add statistics and the manual smush button to Gutenberg blocks that\n"
+"\t\t\t\t\t\t\tdisplay images."
+
+#: core/integrations/class-gutenberg.php:73
+msgid "Gutenberg Support"
+msgstr "Gutenberg Support"
+
+#: core/integrations/class-gutenberg.php:72
+msgid "Show Smush stats in Gutenberg blocks"
+msgstr "Show Smush stats in Gutenberg blocks"
+
+#. translators: %1$s - opening <a>, %2$s - closing </a>
+#: app/class-admin.php:350
+msgid "Smush uses the Stackpath Content Delivery Network (CDN). Stackpath may store web log information of site visitors, including IPs, UA, referrer, Location and ISP info of site visitors for 7 days. Files and images served by the CDN may be stored and served from countries other than your own. Stackpath's privacy policy can be found %1$shere%2$s."
+msgstr "Smush uses the Stackpath Content Delivery Network (CDN). Stackpath may store web log information of site visitors, including IPs, UA, referrer, Location and ISP info of site visitors for 7 days. Files and images served by the CDN may be stored and served from countries other than your own. Stackpath's privacy policy can be found %1$shere%2$s."
+
+#: app/modals/progress-dialog.php:140
+msgid "RESUME"
+msgstr "RESUME"
+
+#: core/modules/class-dir.php:882
+msgid "Empty Directory Path"
+msgstr "Empty Directory Path"
+
+#: core/modules/class-dir.php:683
+msgid "There was a problem getting the selected directories"
+msgstr "There was a problem getting the selected directories"
+
+#: core/modules/class-dir.php:506 core/modules/class-dir.php:516
+#: core/modules/class-dir.php:756 core/modules/class-dir.php:874
+msgid "Unauthorized"
+msgstr "Unauthorised"
+
+#: core/class-core.php:285
+msgid "Resume scan"
+msgstr "Resume scan"
+
+#: core/class-core.php:284
+msgid "images optimized"
+msgstr "images optimised"
+
+#: app/views/nextgen/summary-meta-box.php:65
+msgid "Disabled"
+msgstr "Disabled"
+
+#: app/class-media-library.php:884
+msgid "Resmush"
+msgstr "Resmush"
+
+#: app/class-media-library.php:910
+msgid "Restore"
+msgstr "Restore"
+
+#: app/class-media-library.php:547
+msgid "View Stats"
+msgstr "View Stats"
+
+#: app/class-abstract-page.php:696
+msgid "Documentation"
+msgstr "Documentation"
+
+#: app/class-abstract-page.php:685
+msgid "Re-Check Images"
+msgstr "Re-Check Images"
+
+#: app/views/pro-features/meta-box.php:107
+#: app/views/pro-features/meta-box.php:117
+msgid "NextGen Gallery Integration"
+msgstr "NextGen Gallery Integration"
+
+#: app/common/all-images-smushed-notice.php:20
+#: app/views/dashboard/bulk/meta-box.php:29
+msgid "All attachments have been smushed. Awesome!"
+msgstr "All attachments have been smushed. Awesome!"
+
+#: app/views/bulk/meta-box.php:43
+msgid "Once you upload images, reload this page and start playing!"
+msgstr "Once you upload images, reload this page and start playing!"
+
+#. translators: %1$s - a href tag, %2$s - a href closing tag
+#: app/views/integrations/meta-box.php:49
+msgid "Smush Pro supports hosting images on Amazon S3 and optimizing NextGen Gallery images directly through NextGen Gallery settings. %1$sTry it free%2$s with a WPMU DEV membership today!"
+msgstr "Smush Pro supports hosting images on Amazon S3 and optimising NextGen Gallery images directly through NextGen Gallery settings. %1$sTry it free%2$s with a WPMU DEV membership today!"
+
+#: app/class-abstract-summary-page.php:134 app/class-media-library.php:392
+#: app/views/dashboard/integrations-meta-box.php:49
+msgid "PRO"
+msgstr "PRO"
+
+#: app/class-abstract-summary-page.php:133
+msgid "Join WPMU DEV to unlock multi-pass lossy compression"
+msgstr "Join WPMU DEV to unlock multi-pass lossy compression"
+
+#: app/class-abstract-summary-page.php:132
+msgid "Pro Savings"
+msgstr "Pro Savings"
+
+#. translators: %1$1s - opening <a> tag, %2$2s - closing <a> tag
+#: app/views/summary/meta-box.php:112
+msgid "Save a ton of space by not storing over-sized images on your server. %1$1sEnable image resizing%2$2s"
+msgstr "Save a ton of space by not storing oversized images on your server. %1$1sEnable image resizing%2$2s"
+
+#: app/views/summary/meta-box.php:98
+msgid "Image Resize Savings"
+msgstr "Image Resize Savings"
+
+#: app/views/summary/meta-box.php:77
+msgid "Images Smushed"
+msgstr "Images Smushed"
+
+#: app/views/smush-upgrade-page.php:52 app/views/summary/meta-box.php:69
+msgid "Total Savings"
+msgstr "Total Savings"
+
+#: app/class-admin.php:307 app/pages/class-dashboard.php:82
+#: app/pages/class-integrations.php:38
+#: app/views/settings/permissions-meta-box.php:75
+#: _src/react/modules/configs.jsx:146
+#: app/assets/js/smush-react-configs.min.js:6258
+msgid "Integrations"
+msgstr "Integrations"
+
+#: app/class-admin.php:287 app/pages/class-bulk.php:54
+#: app/pages/class-dashboard.php:71 app/pages/class-nextgen.php:57
+#: app/pages/class-nextgen.php:118 app/views/dashboard/bulk/meta-box.php:71
+#: app/views/settings/permissions-meta-box.php:70
+#: _src/react/modules/configs.jsx:145
+#: app/assets/js/smush-react-configs.min.js:6257
+msgid "Bulk Smush"
+msgstr "Bulk Smush"
+
+#: app/views/smush-upgrade-page.php:97
+msgid "Pro Features"
+msgstr "Pro Features"
+
+#: app/views/pro-features/meta-box.php:72
+msgid "Super-smush lossy compression"
+msgstr "Super-smush lossy compression"
+
+#: core/class-rest.php:76
+msgid "Smushing in progress"
+msgstr "Smushing in progress"
+
+#: core/class-rest.php:52
+msgid "Smush data."
+msgstr "Smush data."
+
+#: app/common/footer-plugins-upsell.php:26
+#: app/common/footer-plugins-upsell.php:38
+#: app/common/footer-plugins-upsell.php:50
+msgid "View features"
+msgstr "View features"
+
+#: app/views/smush-upgrade-page.php:171
+msgid "by WPMU DEV"
+msgstr "by WPMU DEV"
+
+#: app/views/smush-upgrade-page.php:171
+msgid "Made with"
+msgstr "Made with"
+
+#: app/common/footer-plugins-upsell.php:72
+msgid "Try pro features for free!"
+msgstr "Try pro features for free!"
+
+#: app/common/footer-plugins-upsell.php:70
+#: _src/react/views/webp/free-content.jsx:78
+#: app/assets/js/smush-react-webp.min.js:1149
+msgid "Learn more"
+msgstr "Learn more"
+
+#: app/common/footer-plugins-upsell.php:68
+msgid "Pretty much everything you need for developing and managing WordPress based websites, and then some."
+msgstr "Pretty much everything you need for developing and managing WordPress based websites, and then some."
+
+#: app/modals/directory-list.php:36
+msgid "Choose which folder you wish to smush. Smush will automatically include any images in subfolders of your selected folder."
+msgstr "Choose which folder you wish to smush. Smush will automatically include any images in subfolders of your selected folder."
+
+#: app/modals/directory-list.php:30 app/modals/progress-dialog.php:32
+msgid "Close"
+msgstr "Close"
+
+#: app/modals/directory-list.php:26 app/modals/progress-dialog.php:28
+#: app/views/dashboard/directory-meta-box.php:69
+msgid "Choose Directory"
+msgstr "Choose Directory"
+
+#: app/views/lazyload/meta-box.php:219 app/views/lazyload/meta-box.php:272
+msgid "Remove"
+msgstr "Remove"
+
+#: app/views/directory/meta-box.php:21
+msgid "Directory Smush - Choose Folder"
+msgstr "Directory Smush - Choose Folder"
+
+#: app/class-admin.php:291 app/pages/class-dashboard.php:129
+#: app/pages/class-directory.php:31
+msgid "Directory Smush"
+msgstr "Directory Smush"
+
+#: app/class-abstract-summary-page.php:256 app/class-admin.php:299
+#: app/pages/class-cdn.php:31 app/pages/class-cdn.php:40
+#: app/pages/class-cdn.php:48 app/pages/class-dashboard.php:151
+#: app/pages/class-dashboard.php:400 app/views/cdn/meta-box-header.php:17
+#: app/views/dashboard/summary-meta-box.php:60
+#: app/views/settings/permissions-meta-box.php:85 core/class-configs.php:582
+#: _src/react/modules/configs.jsx:148
+#: app/assets/js/smush-react-configs.min.js:6260
+msgid "CDN"
+msgstr "CDN"
+
+#. translators: %s - width, %s - height.
+#: core/modules/class-resize-detection.php:101
+msgid "This image is too large for its container. Adjust the image dimensions to %1$s x %2$spx for optimal results."
+msgstr "This image is too large for its container. Adjust the image dimensions to %1$s x %2$spx for optimal results."
+
+#. translators: %s - width, %s - height.
+#: core/modules/class-resize-detection.php:103
+msgid "This image is too small for its container. Adjust the image dimensions to %1$s x %2$spx for optimal results."
+msgstr "This image is too small for its container. Adjust the image dimensions to %1$s x %2$spx for optimal results."
+
+#: core/integrations/class-s3.php:275
+msgid "To use this feature you need to install WP Offload Media and have an Amazon S3 account setup."
+msgstr "To use this feature you need to install WP Offload Media and have an Amazon S3 account setup."
+
+#. translators: %1$d - number of images, %2$s - opening a tag, %3$s - closing a
+#. tag
+#: app/class-ajax.php:723
+msgid "Image check complete, you have %1$d images that need smushing. %2$sBulk smush now!%3$s"
+msgstr "Image check complete, you have %1$d images that need smushing. %2$sBulk smush now!%3$s"
+
+#: core/class-settings.php:261
+msgid "Detect and show incorrectly sized images"
+msgstr "Detect and show incorrectly sized images"
+
+#: app/modals/onboarding.php:56 core/class-settings.php:243
+msgid "Optimize images up to 2x more than regular smush with our multi-pass lossy compression."
+msgstr "Optimise images up to 2x more than regular smush with our multi-pass lossy compression."
+
+#: core/class-settings.php:247
+msgid "Metadata"
+msgstr "Metadata"
+
+#: app/modals/onboarding.php:87 core/class-settings.php:246
+msgid "Strip my image metadata"
+msgstr "Strip my image metadata"
+
+#: core/class-settings.php:252
+msgid "Image Resizing"
+msgstr "Image Resizing"
+
+#: app/common/footer-plugins-upsell.php:47
+msgid "SmartCrawl Search Engine Optimization"
+msgstr "SmartCrawl Search Engine Optimisation"
+
+#: app/common/footer-plugins-upsell.php:36
+msgid "Security Tweaks & Recommendations, File & Malware Scanning, Login & 404 Lockout Protection, Two-Factor Authentication & more."
+msgstr "Security Tweaks & Recommendations, File & Malware Scanning, Login & 404 Lockout Protection, Two-Factor Authentication & more."
+
+#: app/common/footer-plugins-upsell.php:35
+msgid "Defender Security, Monitoring, and Hack Protection"
+msgstr "Defender Security, Monitoring, and Hack Protection"
+
+#: app/common/footer-plugins-upsell.php:24
+msgid "Performance Tests, File Optimization & Compression, Page, Browser & Gravatar Caching, GZIP Compression, CloudFlare Integration & more."
+msgstr "Performance Tests, File Optimisation & Compression, Page, Browser & Gravatar Caching, GZIP Compression, Cloudflare Integration & more."
+
+#: app/common/footer-plugins-upsell.php:23
+msgid "Hummingbird Page Speed Optimization"
+msgstr "Hummingbird Page Speed Optimisation"
+
+#: app/common/footer-plugins-upsell.php:16
+msgid "Check out our other free wordpress.org plugins!"
+msgstr "Check out our other free wordpress.org plugins!"
+
+#. Plugin Name of the plugin
+#: app/class-admin.php:280 app/class-media-library.php:308
+#: app/class-media-library.php:519
+#: core/integrations/nextgen/class-admin.php:121
+#: core/integrations/nextgen/class-admin.php:123
+#: core/integrations/nextgen/class-admin.php:314 wp-smush.php:407
+msgid "Smush"
+msgstr "Smush"
+
+#: app/class-admin.php:280 app/class-admin.php:323
+#: app/pages/class-dashboard.php:118 app/pages/class-dashboard.php:350
+#: app/views/directory/meta-box.php:43
+msgid "Smush Pro"
+msgstr "Smush Pro"
+
+#: app/common/footer-plugins-upsell.php:48
+msgid "Customize Titles & Metadata, OpenGraph, Twitter & Pinterest Support, Auto-Keyword Linking, SEO & Readability Analysis, Sitemaps, URL Crawler & more."
+msgstr "Customise Titles & Metadata, OpenGraph, Twitter & Pinterest Support, Auto-Keyword Linking, SEO & Readability Analysis, Sitemaps, URL Crawler & more."
+
+#: app/class-admin.php:358
+msgid "Smush uses a third-party email service (Drip) to send informational emails to the site administrator. The administrator's email address is sent to Drip and a cookie is set by the service. Only administrator information is collected by Drip."
+msgstr "Smush uses a third-party email service (Drip) to send informational emails to the site administrator. The administrator's email address is sent to Drip and a cookie is set by the service. Only administrator information is collected by Drip."
+
+#: app/class-admin.php:347
+msgid "Smush sends images to the WPMU DEV servers to optimize them for web use. This includes the transfer of EXIF data. The EXIF data will either be stripped or returned as it is. It is not stored on the WPMU DEV servers."
+msgstr "Smush sends images to the WPMU DEV servers to optimise them for web use. This includes the transfer of EXIF data. The EXIF data will either be stripped or returned as it is. It is not stored on the WPMU DEV servers."
+
+#: app/class-admin.php:345
+msgid "Note: Smush does not interact with end users on your website. The only input option Smush has is to a newsletter subscription for site admins only. If you would like to notify your users of this in your privacy policy, you can use the information below."
+msgstr "Note: Smush does not interact with end users on your website. The only input option Smush has is to a newsletter subscription for site admins only. If you would like to notify your users of this in your privacy policy, you can use the information below."
+
+#: app/class-admin.php:343
+msgid "Plugin: Smush"
+msgstr "Plugin: Smush"
+
+#: app/views/pro-features/meta-box.php:74
+msgid "Optimize images 2x more than regular smushing and with no visible loss in quality using Smush’s intelligent multi-pass lossy compression."
+msgstr "Optimise images 2x more than regular smushing and with no visible loss in quality using Smush’s intelligent multi-pass lossy compression."
+
+#: app/views/bulk/meta-box.php:164
+msgid "Click to start Bulk Smushing images in Media Library"
+msgstr "Click to start Bulk Smushing images in Media Library"
+
+#: app/views/cdn/disabled-meta-box.php:32
+msgid "GET STARTED"
+msgstr "GET STARTED"
+
+#: app/class-abstract-summary-page.php:302
+#: app/class-abstract-summary-page.php:315
+msgid "Select a directory you'd like to Smush."
+msgstr "Select a directory you'd like to Smush."
+
+#: app/class-media-library.php:313
+msgid "Smush Stats"
+msgstr "Smush Stats"
+
+#: core/class-core.php:282
+msgid "Give us a moment while we sync the stats."
+msgstr "Give us a moment while we sync the stats."
+
+#: app/pages/class-integrations.php:88
+msgid "Note: For this process to happen automatically you need automatic smushing enabled."
+msgstr "Note: For this process to happen automatically you need automatic smushing enabled."
+
+#: app/pages/class-bulk.php:260
+msgid ""
+"Note: This data adds to the size of the image. While this information might be\n"
+"\t\t\t\t\timportant to photographers, it’s unnecessary for most users and safe to remove."
+msgstr ""
+"Note: This data adds to the size of the image. While this information might be\n"
+"\t\t\t\t\timportant to photographers, it’s unnecessary for most users and safe to remove."
+
+#: app/common/meta-box-footer.php:35
+msgid "Smush will automatically check for any images that need re-smushing."
+msgstr "Smush will automatically check for any images that need re-smushing."
+
+#: app/class-abstract-page.php:248
+msgid "Try Smush Pro Free"
+msgstr "Try Smush Pro Free"
+
+#: core/class-core.php:286
+msgid "Stop current bulk smush process."
+msgstr "Stop current bulk smush process."
+
+#: app/views/bulk/meta-box.php:83
+msgid "Still having trouble with PageSpeed tests? Give these a go…"
+msgstr "Still having trouble with PageSpeed tests? Give these a go…"
+
+#: app/class-abstract-summary-page.php:205
+msgid "PNG to JPEG savings"
+msgstr "PNG to JPEG savings"
+
+#: app/views/nextgen/summary-meta-box.php:42
+msgid "Total savings"
+msgstr "Total savings"
+
+#: app/class-abstract-summary-page.php:153
+msgid "Super-Smush Savings"
+msgstr "Super-Smush Savings"
+
+#: app/views/dashboard/summary-meta-box.php:49
+#: app/views/summary/meta-box.php:86
+msgid "Images Resized"
+msgstr "Images Resized"
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/bulk/meta-box.php:139
+msgid "Enable %1$sResize Full Size Images%2$s to scale big images down to a reasonable size and save a ton of space."
+msgstr "Enable %1$sResize Full Size Images%2$s to scale big images down to a reasonable size and save a ton of space."
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/bulk/meta-box.php:127
+msgid "Make sure your images are the right size for your theme. %1$sLearn more%2$s."
+msgstr "Make sure your images are the right size for your theme. %1$sLearn more%2$s."
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/bulk/meta-box.php:97
+msgid "Upgrade to Smush Pro for advanced lossy compression. %1$sTry pro free%2$s."
+msgstr "Upgrade to Smush Pro for advanced lossy compression. %1$sTry pro free%2$s."
+
+#. translators: %1$s: opening a tag, %2$s: closing a tag
+#: app/views/bulk/meta-box.php:108
+msgid "Enable %1$sSuper-Smush%2$s for advanced lossy compression to optimize images further with almost no visible drop in quality."
+msgstr "Enable %1$sSuper-Smush%2$s for advanced lossy compression to optimise images further with almost no visible drop in quality."
+
+#. translators: %1$s; starting a tag, %2$s: ending a tag
+#: app/class-abstract-summary-page.php:164
+msgid "Compress images up to 2x more than regular smush with almost no visible drop in quality. %1$sEnable Super-Smush%2$s"
+msgstr "Compress images up to 2x more than regular smush with almost no visible drop in quality. %1$sEnable Super-Smush%2$s"
+
+#: app/views/nextgen/summary-meta-box.php:34
+msgid "Images smushed"
+msgstr "Images smushed"
+
+#: core/integrations/class-s3.php:301
+msgid "Amazon S3 support is active."
+msgstr "Amazon S3 support is active."
+
+#: core/class-configs.php:579 core/integrations/class-s3.php:92
+msgid "Amazon S3"
+msgstr "Amazon S3"
+
+#: core/integrations/class-s3.php:91
+msgid "Enable Amazon S3 support"
+msgstr "Enable Amazon S3 support"
+
+#: core/class-configs.php:580 core/integrations/class-nextgen.php:133
+msgid "NextGen Gallery"
+msgstr "NextGen Gallery"
+
+#: app/class-abstract-summary-page.php:303
+#: app/class-abstract-summary-page.php:316 app/modals/directory-list.php:46
+msgid "Choose directory"
+msgstr "Choose directory"
+
+#: app/class-abstract-summary-page.php:299
+msgid "Smush images that aren't located in your uploads folder."
+msgstr "Smush images that aren't located in your uploads folder."
+
+#: app/class-ajax.php:428
+msgid "We haven’t found any images in your media library yet so there’s no smushing to be done! Once you upload images, reload this page and start playing!"
+msgstr "We haven’t found any images in your media library yet so there’s no smushing to be done! Once you upload images, reload this page and start messing around!"
+
+#: app/class-abstract-summary-page.php:296
+msgid "Directory Smush Savings"
+msgstr "Directory Smush Savings"
+
+#. translators: %1$s - <a>, %2$s - </a>
+#: core/integrations/class-s3.php:94
+msgid ""
+"Storing your image on S3 buckets using %1$sWP Offload Media%2$s? Smush can detect\n"
+"\t\t\t\tand smush those assets for you, including when you're removing files from your host server."
+msgstr ""
+"Storing your image on S3 buckets using %1$sWP Offload Media%2$s? Smush can detect\n"
+"\t\t\t\tand smush those assets for you, including when you're removing files from your host server."
+
+#: app/views/pro-features/meta-box.php:100 app/views/smush-upgrade-page.php:121
+#: core/class-settings.php:276
+msgid "Auto-convert PNGs to JPEGs (lossy)"
+msgstr "Auto-convert PNGs to JPEGs (lossy)"
+
+#: core/class-settings.php:278
+msgid "When you compress a PNG, Smush will check if converting it to JPEG could further reduce its size."
+msgstr "When you compress a PNG, Smush will check if converting it to JPEG could further reduce its size."
+
+#: core/class-settings.php:277
+msgid "PNG to JPEG Conversion"
+msgstr "PNG to JPEG Conversion"
+
+#: app/modals/onboarding.php:42 app/modals/onboarding.php:145
+msgid "Full Size Images"
+msgstr "Full Size Images"
+
+#: app/pages/class-bulk.php:148
+msgid "Max height"
+msgstr "Max height"
+
+#: app/pages/class-bulk.php:136
+msgid "Max width"
+msgstr "Max width"
+
+#. translators: %1$s: strong tag, %2$d: max width size, %3$s: tag, %4$d: max
+#. height size, %5$s: closing strong tag
+#: app/pages/class-bulk.php:161
+msgid "Currently, your largest image size is set at %1$s%2$dpx wide %3$s %4$dpx high%5$s."
+msgstr "Currently, your largest image size is set at %1$s%2$dpx wide %3$s %4$dpx high%5$s."
+
+#: core/modules/class-dir.php:301
+msgid "Image couldn't be optimized"
+msgstr "Image couldn't be optimised"
+
+#: core/modules/class-dir.php:249
+msgid "Incorrect image id"
+msgstr "Incorrect image id"
+
+#: core/modules/class-dir.php:897
+msgid "We could not find any images in the selected directory."
+msgstr "We could not find any images in the selected directory."
+
+#: app/views/directory/meta-box.php:29
+msgid "CHOOSE DIRECTORY"
+msgstr "CHOOSE DIRECTORY"
+
+#: app/class-abstract-summary-page.php:258
+#: app/class-abstract-summary-page.php:309
+msgid "Updating Stats"
+msgstr "Updating Stats"
+
+#: core/class-core.php:279
+msgid "Ajax Error"
+msgstr "Ajax Error"
+
+#: core/class-core.php:277
+msgid "images could not be smushed."
+msgstr "images could not be smushed."
+
+#: core/class-core.php:276
+msgid "image could not be smushed."
+msgstr "image could not be smushed."
+
+#: core/class-core.php:274
+msgid "Missing file path."
+msgstr "Missing file path."
+
+#: app/views/nextgen/meta-box-header.php:26
+msgid "Manage Galleries"
+msgstr "Manage Galleries"
+
+#: app/class-abstract-page.php:269
+msgid "Smush Free was deactivated. You have Smush Pro active!"
+msgstr "Smush Free was deactivated. You have Smush Pro active!"
+
+#. translators: %1$s - a href opening tag, %2$s - a href closing tag
+#: app/views/nextgen/meta-box-header.php:25
+msgid "Smush individual images via your %1$sManage Galleries%2$s section"
+msgstr "Smush individual images via your %1$sManage Galleries%2$s section"
+
+#: app/views/settings/data-meta-box.php:33
+msgid "Restore Images"
+msgstr "Restore Images"
+
+#. translators: %1$s: opening a tga, %2$s: closing a tag
+#: app/views/nextgen/meta-box.php:32
+msgid "We haven't found any images in your %1$sgallery%2$s yet, so there's no smushing to be done! Once you upload images, reload this page and start playing!"
+msgstr "We haven't found any images in your %1$sgallery%2$s yet, so there's no smushing to be done! Once you upload images, reload this page and start playing!"
+
+#. translators: %1$s: reduced by bytes, %2$s: size format
+#: core/integrations/nextgen/class-stats.php:284
+msgid "Reduced by %1$s (%2$01.1f%%)"
+msgstr "Reduced by %1$s (%2$01.1f%%)"
+
+#: app/class-media-library.php:546
+msgid "Detailed stats for all the image sizes"
+msgstr "Detailed stats for all the image sizes"
+
+#: app/views/integrations/meta-box.php:50
+msgid "Try Smush Pro for FREE"
+msgstr "Try Smush Pro for FREE"
+
+#: app/views/bulk/meta-box.php:47 app/views/nextgen/meta-box.php:43
+msgid "UPLOAD IMAGES"
+msgstr "UPLOAD IMAGES"
+
+#: app/modals/progress-dialog.php:135
+msgid "CANCEL"
+msgstr "CANCEL"
+
+#: app/class-abstract-page.php:767
+msgid "Your settings have been updated!"
+msgstr "Your settings have been updated!"
+
+#: core/integrations/class-nextgen.php:539
+msgid "Image not restored, Nonce verification failed."
+msgstr "Image not restored, Nonce verification failed."
+
+#: core/integrations/class-nextgen.php:640 core/modules/class-backup.php:341
+msgid "Unable to restore image"
+msgstr "Unable to restore image"
+
+#: core/integrations/class-nextgen.php:351
+#: core/integrations/class-nextgen.php:352
+msgid "We couldn't find the metadata for the image, possibly the image has been deleted."
+msgstr "We couldn't find the metadata for the image, possibly the image has been deleted."
+
+#: core/integrations/class-nextgen.php:653
+msgid "We couldn't process the image, fields empty."
+msgstr "We couldn't process the image, fields empty."
+
+#. translators: %s: error message
+#: core/integrations/class-nextgen.php:683
+msgid "Unable to smush image, %s"
+msgstr "Unable to smush image, %s"
+
+#: app/views/nextgen/meta-box.php:72
+msgid "BULK SMUSH"
+msgstr "BULK SMUSH"
+
+#: app/views/bulk/meta-box-header.php:26
+msgid "Media Library"
+msgstr "Media Library"
+
+#: app/class-abstract-page.php:682
+msgid "Lets you check if any images can be further optimized. Useful after changing settings."
+msgstr "Lets you check if any images can be further optimised. Useful after changing settings."
+
+#: app/pages/class-bulk.php:173
+msgid "Just to let you know, the width you've entered is less than your largest image and may result in pixelation."
+msgstr "Just to let you know, the width you've entered is less than your largest image and may result in pixelation."
+
+#: app/pages/class-bulk.php:181
+msgid "Just to let you know, the height you’ve entered is less than your largest image and may result in pixelation."
+msgstr "Just to let you know, the height you’ve entered is less than your largest image and may result in pixelation."
+
+#: app/views/bulk/meta-box.php:35 app/views/nextgen/meta-box.php:26
+msgid "No attachments found - Upload some images"
+msgstr "No attachments found - Upload some images"
+
+#. translators: %1$s - a href opening tag, %2$s - a href closing tag
+#: app/views/bulk/meta-box-header.php:25
+msgid "Smush individual images via your %1$sMedia Library%2$s"
+msgstr "Smush individual images via your %1$sMedia Library%2$s"
+
+#: app/views/bulk/meta-box.php:165
+msgid "BULK SMUSH NOW"
+msgstr "BULK SMUSH NOW"
+
+#: app/common/progress-bar.php:90
+msgid "Bulk smush is currently running. You need to keep this page open for the process to complete."
+msgstr "Bulk smush is currently running. You need to keep this page open for the process to complete."
+
+#: core/integrations/class-nextgen.php:132
+msgid "Enable NextGen Gallery integration"
+msgstr "Enable NextGen Gallery integration"
+
+#: app/views/pro-features/meta-box.php:109
+#: app/views/pro-features/meta-box.php:119
+#: core/integrations/class-nextgen.php:134
+msgid "Allow smushing images directly through NextGen Gallery settings."
+msgstr "Allow smushing images directly through NextGen Gallery settings."
+
+#: core/class-core.php:269 core/integrations/nextgen/class-admin.php:214
+msgid "All images are fully optimized."
+msgstr "All images are fully optimised."
+
+#: core/class-core.php:272
+msgid "We successfully verified your membership, all the Pro features should work completely. "
+msgstr "We successfully verified your membership, all the Pro features should work completely. "
+
+#: core/class-core.php:273
+msgid "Your membership couldn't be verified."
+msgstr "Your membership couldn't be verified."
+
+#: app/class-ajax.php:360
+msgid "Attachment Skipped - Check `wp_smush_image` filter."
+msgstr "Attachment Skipped - Check `wp_smush_image` filter."
+
+#. translators: %s: total number of images
+#: core/modules/class-dir.php:1203
+msgid "You've smushed %d images in total."
+msgstr "You've smushed %d images in total."
+
+#: app/class-ajax.php:392 core/integrations/class-nextgen.php:662
+msgid "Image couldn't be smushed as the nonce verification failed, try reloading the page."
+msgstr "Image couldn't be smushed as the nonce verification failed, try reloading the page."
+
+#: app/class-ajax.php:383
+msgid "Image not smushed, fields empty."
+msgstr "Image not smushed, fields empty."
+
+#: app/class-ajax.php:465
+msgid "Yay! All images are optimized as per your current settings."
+msgstr "Yay! All images are optimised as per your current settings."
+
+#: core/integrations/class-nextgen.php:529
+msgid "Error in processing restore action, Fields empty."
+msgstr "Error in processing restore action, Fields empty."
+
+#: app/views/bulk/meta-box.php:42
+msgid "We haven’t found any images in your media library yet so there’s no smushing to be done!"
+msgstr "We haven’t found any images in your media library yet so there’s no smushing to be done!"
+
+#. translators: %1$s - <a>, %2$s - </a>
+#: app/class-abstract-page.php:787
+msgid "You have images that need smushing. %1$sBulk smush now!%2$s"
+msgstr "You have images that need smushing. %1$sBulk smush now!%2$s"
+
+#: app/class-abstract-page.php:251 app/class-abstract-page.php:740
+#: app/class-admin.php:498 app/pages/class-directory.php:176
+#: app/pages/class-directory.php:177 app/views/bulk/meta-box.php:80
+#: app/views/bulk/meta-box.php:88 core/class-core.php:293
+#: core/external/plugin-notice/notice.php:491
+msgid "Dismiss"
+msgstr "Dismiss"
+
+#: app/class-abstract-page.php:314
+msgid "Install Plugin"
+msgstr "Install Plugin"
+
+#: app/views/dashboard/cdn/meta-box.php:30
+#: app/views/dashboard/lazy-load-meta-box.php:24
+#: app/views/dashboard/webp/meta-box.php:29
+#: app/views/lazyload/disabled-meta-box.php:27
+msgid "Activate"
+msgstr "Activate"
+
+#: core/class-settings.php:241
+msgid "Super-Smush my images"
+msgstr "Super-Smush my images"
+
+#: app/class-admin.php:232 app/class-admin.php:315 app/pages/class-bulk.php:83
+#: _src/react/modules/configs.jsx:151
+#: app/assets/js/smush-react-configs.min.js:6263
+msgid "Settings"
+msgstr "Settings"
+
+#: core/external/free-dashboard/module.php:436
+#: core/external/free-dashboard/module.php:499
+msgid "Thanks :)"
+msgstr "Thanks :)"
+
+#: core/external/free-dashboard/module.php:440
+#: core/external/free-dashboard/module.php:508
+msgid "No thanks"
+msgstr "No thanks"
+
+#: app/class-media-library.php:316 app/class-media-library.php:742
+#: core/integrations/nextgen/class-stats.php:544
+msgid "Savings"
+msgstr "Savings"
+
+#: app/class-media-library.php:315 app/class-media-library.php:741
+#: core/integrations/nextgen/class-stats.php:543
+msgid "Image size"
+msgstr "Image size"
+
+#: core/integrations/nextgen/class-stats.php:316
+msgid "Smush stats"
+msgstr "Smush stats"
+
+#. Author of the plugin
+msgid "WPMU DEV"
+msgstr "WPMU DEV"
+
+#: app/class-media-library.php:359
+msgid "Smush Now!"
+msgstr "Smush Now!"
+
+#: app/class-media-library.php:410 app/class-media-library.php:464
+#: app/class-media-library.php:700 core/class-core.php:291
+#: core/class-rest.php:82 core/integrations/nextgen/class-admin.php:308
+msgid "Not processed"
+msgstr "Not processed"
+
+#: core/class-core.php:278 core/integrations/nextgen/class-stats.php:270
+#: core/integrations/nextgen/class-stats.php:273
+msgid "Already Optimized"
+msgstr "Already Optimised"
+
+#: core/modules/class-smush.php:445
+msgid "Image couldn't be smushed"
+msgstr "Image couldn't be smushed"
+
+#: core/modules/class-smush.php:420
+msgid "Smush data corrupted, try again."
+msgstr "Smush data corrupted, try again."
+
+#. translators: %s error message
+#: core/modules/class-smush.php:395
+msgid "Error posting to API: %s"
+msgstr "Error posting to API: %s"
+
+#: core/modules/class-smush.php:291
+msgid "Unknown API error"
+msgstr "Unknown API error"
+
+#. translators: %s: directory name
+#: core/modules/class-smush.php:258
+msgid "%s is not writable"
+msgstr "%s is not writable"
+
+#. translators: %s: file path
+#: core/modules/class-smush.php:254
+msgid "Could not find %s"
+msgstr "Could not find %s"
+
+#: core/modules/class-smush.php:250
+msgid "File path is empty"
+msgstr "File path is empty"
+
+#: app/class-ajax.php:344 core/integrations/class-nextgen.php:424
+msgid "No attachment ID was provided."
+msgstr "No attachment ID was provided."
+
+#: app/class-ajax.php:336 core/integrations/class-nextgen.php:416
+msgid "You don't have permission to work with uploaded files."
+msgstr "You don't have permission to work with uploaded files."
+
+#: core/class-core.php:267 core/integrations/nextgen/class-admin.php:212
+msgid "Smush Now"
+msgstr "Smush Now"
+
+#: app/class-media-library.php:939 core/class-core.php:266
+#: core/class-settings.php:242 core/integrations/nextgen/class-admin.php:211
+#: core/integrations/nextgen/class-stats.php:357
+msgid "Super-Smush"
+msgstr "Super-Smush"
+
+#: core/class-core.php:281
+msgid "All Done!"
+msgstr "All Done!"
+
+#: app/class-admin.php:362 app/modals/checking-files.php:46
+#: app/modals/restore-images.php:167 app/modals/webp-delete-all.php:63
+msgid "WP Smush"
+msgstr "WP Smush"
+
+#. translators: %s - plugin name
+#: core/external/free-dashboard/module.php:502
+msgid "Rate %s"
+msgstr "Rate %s"
+
+#. translators: %1$s - user name, %2$s - plugin name, %2$s - new line <br>
+#: core/external/free-dashboard/module.php:483
+msgid "We've spent countless hours developing this free plugin for you, and we would really appreciate it if you dropped us a quick rating!"
+msgstr "We've spent countless hours developing this free plugin for you, and we would really appreciate it if you dropped us a quick rating!"
+
+#: app/class-abstract-page.php:250 core/external/free-dashboard/module.php:439
+#: core/external/free-dashboard/module.php:507
+msgid "Saving"
+msgstr "Saving"
+
+#. translators: %s - plugin name
+#: core/external/free-dashboard/module.php:408
+msgid "We're happy that you've chosen to install %s! Are you interested in how to make the most of this plugin? How would you like a quick 5 day email crash course with actionable advice on building your membership site? Only the info you want, no subscription!"
+msgstr "We're happy that you've chosen to install %s! Are you interested in how to make the most of this plugin? How would you like a quick 5 day email crash course with actionable advice on building your membership site? Only the info you want, no subscription!"
+
+#: wp-smush.php:389
+msgid "Get Fast!"
+msgstr "Get Fast!"
+
+#. translators: %1$s: response code, %2$s error message
+#: core/modules/class-smush.php:404
+msgid "Error posting to API: %1$s %2$s"
+msgstr "Error posting to API: %1$s %2$s"
+
+#: app/common/meta-box-footer.php:17
+msgid "Save changes"
+msgstr "Save changes"
+
+#. translators: %1$s: image size, %2$s: image name
+#: core/modules/class-smush.php:273
+msgid "Skipped (%1$s), size limit exceeded"
+msgstr "Skipped (%1$s), size limit exceeded"
+
+#. translators: %1$s: image size, %2$s: image name
+#: core/modules/class-smush.php:269
+msgid "Skipped (%1$s), image not found"
+msgstr "Skipped (%1$s), image not found"
+
+#: app/views/nextgen/summary-meta-box.php:58
+msgid "Super-Smushed images"
+msgstr "Super-Smushed images"

@@ -1,0 +1,431 @@
+.article {
+  padding-top: 65px;
+  @include breakpoint(medium) {
+    padding-top: 0;
+  }
+  &__inner {
+    @include inner;
+
+    &.basic-page {
+      .article__content {
+        padding-top: 20px;
+        width: 100%;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__feature {
+    margin-left: -20px;
+    width: 100vw;
+    position: relative;
+    @include breakpoint(medium) {
+      margin-left: 0;
+      width: 100%;
+      height: 580px;
+    }
+    img {
+      width: 100vw;
+      height: 356px;
+      margin: 0;
+      object-fit: cover;
+      @include breakpoint(medium) {
+        width: 100%;
+        height: 580px;
+      }
+    }
+
+    &__mobile {
+      display: block;
+      @include breakpoint(medium) {
+        display: none;
+      }
+    }
+    &__desktop {
+      display: none;
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+    &--overlay {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background: rgba(0,0,0,0.25);
+
+        @include breakpoint(medium) {
+          display: none;
+        }
+
+      }
+    }
+  }
+  footer {
+    .banner {
+      margin-bottom: 30px;
+    }
+  }
+  &__mobile-author {
+    font-size: 12px;
+    color: $color--grey;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.65%;
+    position: relative;
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__save {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    @include breakpoint(medium) {
+      bottom: 30px;
+      right: 30px;
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+    }
+    &.active {
+      svg {
+        border: 1px solid $color--white;
+        circle {
+          fill: #2B4242;
+        }
+        g#bookmark {
+          stroke: $color--white;
+          stroke-width: 1px;
+        }
+      }
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 28px;
+
+    @include breakpoint(medium) {
+      margin: 0 0 70px;
+    }
+  }
+  &__content {
+    width: 100%;
+    padding-bottom: 30px;
+    @include breakpoint(medium) {
+      width: 65%;
+      padding-bottom: 40px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    ul {
+      li {
+        font-size: 13px;
+        line-height: 22px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      td {
+        padding: 10px;
+        border: 1px solid rgba($color--white, 0.11);
+        font-size: 13px;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 45px 0;
+    }
+    figure {
+      max-width: 100%;
+      margin: 45px 0;
+      img {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .aligncenter,.alignleft,.alignright {
+      display: block;
+      padding: 0;
+    }
+
+    .aligncenter {
+      float: none;
+      margin: 45px auto;
+    }
+
+    .alignright {
+      float: right;
+      margin: .5em 0 45px 1em;
+    }
+
+    .alignleft {
+      float: left;
+      margin: .5em 1em 45px 0;
+    }
+
+    .wp-caption {
+      padding: 0 0 5px;
+      text-align: left;
+      background: #282829;
+      max-width: 100%;
+    }
+
+    .wp-caption img {
+      display: inline;
+    }
+
+    .wp-caption .wp-caption-text {
+      margin: 0;
+      padding: 3px 15px;
+      text-align: left;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 11px;
+      line-height: 22px;
+      color: $color--white;
+    }
+  }
+  &__header {
+    padding: 16px 0 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include breakpoint(medium) {
+      padding: 42px 0 32px;
+    }
+  }
+  &__category {
+    font-family: $font--fancy;
+    font-size: 22px;
+    letter-spacing: 0.22px;
+    font-weight: 700;
+    a {
+      color: $color--grey;
+      text-decoration: none;
+    }
+  }
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    time {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      color: $color--grey;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 500;
+      svg {
+        margin: 0;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__views, &__bookmarks {
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $color--grey;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    svg {
+      margin: 0;
+      margin-right: 5px;
+    }
+  }
+  &__sidebar {
+    display: none;
+    @include breakpoint(medium) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      width: 30%;
+      display: block;
+    }
+  }
+  &__tags, &__share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 18px;
+
+    @include breakpoint(medium) {
+      margin-bottom: 35px;
+    }
+    svg {
+      margin: 0;
+      margin-right: 10px;
+    }
+    h4 {
+      color: $color--white;
+      font-size: 9px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1.22px;
+      margin: 0;
+    }
+    ul {
+      width: 100%;
+      margin: 15px 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        a {
+          font-weight: 600;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          svg {
+            margin: 0;
+            margin-right: 10px;
+          }
+          span {
+            color: $color--grey;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  &__author {
+    margin-bottom: 45px;
+  }
+  &__author-basic {
+    border: 1px solid $color--grey;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin: 0;
+      margin-right: 14px;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      margin-left: 4px;
+      margin-right: 14px;
+    }
+    div {
+      width: calc(100% - 156px);
+      h4 {
+        margin: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 500;
+      }
+      span {
+        font-family: $font--fancy;
+        font-size: 18px;
+        letter-spacing: 0.18px;
+        font-weight: 700;
+        color: $color--grey;
+      }
+    }
+    button {
+      background: transparent;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-right: 10px;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  &__related {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 0 30px;
+    .card {
+      @include breakpoint(medium) {
+        width: 31.333%;
+        margin-right: 3%;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.author {
+  .banner {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    @include breakpoint(medium) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.single-video {
+  .article__feature {
+    margin-left: -20px;
+    width: 100vw;
+    height: auto;
+    @include breakpoint(medium) {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

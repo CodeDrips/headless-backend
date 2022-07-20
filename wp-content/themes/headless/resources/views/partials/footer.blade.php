@@ -1,4 +1,2 @@
-<footer class="site-footer">
-
-  
+<footer class="content-info">
 </footer>

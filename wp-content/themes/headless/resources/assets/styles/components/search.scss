@@ -1,0 +1,89 @@
+.search-form {
+	background: #000;
+	padding: 20px 0 30px;
+	position: absolute;
+	top: 65px;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 5;
+	transition: all ease 0.3s;
+	@include breakpoint(medium) {
+		top: 96px;
+		padding: 0 0 30px;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__inner {
+		@include inner;
+	}
+	form {
+		display: block;
+		width: 100%;
+		position: relative;
+		input {
+			background: #fff;
+			border: 0;
+			box-shadow: 0;
+			border-radius: 0;
+			width: 100%;
+			font-size: 16px;
+			padding: 10px 15px;
+			border-radius: 0;
+			box-shadow: none;
+			&::placeholder {
+				opacity: 1;
+				color: $color--black;
+			}
+			&:focus {
+				outline: 0;
+			}
+			@include breakpoint(medium) {
+				font-size: 14px;
+			}
+		}
+		button {
+			background: transparent;
+			border: 0;
+			position: absolute;
+			top: 10px;
+			right: 5px;
+			@include breakpoint(medium) {
+				top: 8px;
+			}
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+}
+
+.home .search-form {
+  top: 97px;
+  @include breakpoint(medium) {
+    top: 130px;
+  }
+}
+
+.error404 .search-form {
+  background: transparent;
+}
+
+.search-results {
+	.archive__posts {
+		width: 100%;
+		justify-content: flex-start;
+		.card {
+			@include breakpoint(medium) {
+				width: 31.333%;
+				margin-right: 2%;
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

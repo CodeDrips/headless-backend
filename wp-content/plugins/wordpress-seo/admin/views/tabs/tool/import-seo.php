@@ -17,7 +17,11 @@ $import_check->detect();
 if ( count( $import_check->needs_import ) === 0 ) {
 	echo '<h2>', esc_html__( 'Import from other SEO plugins', 'wordpress-seo' ), '</h2>';
 	echo '<p>';
-	esc_html_e( 'Yoast SEO did not detect any plugin data from plugins it can import from.', 'wordpress-seo' );
+	printf(
+		/* translators: %s expands to Yoast SEO */
+		esc_html__( '%s did not detect any plugin data from plugins it can import from.', 'wordpress-seo' ),
+		'Yoast SEO'
+	);
 	echo '</p>';
 
 	return;
@@ -56,8 +60,14 @@ function wpseo_import_external_select( $name, $plugins ) {
 
 <div class="tab-block">
 	<h3><?php esc_html_e( 'Step 2: Import', 'wordpress-seo' ); ?></h3>
-	<p>
-		<?php esc_html_e( 'This will import the post metadata like SEO titles and descriptions into your Yoast SEO metadata. It will only do this when there is no existing Yoast SEO metadata yet. The original data will remain in place.', 'wordpress-seo' ); ?>
+	<p class="yoast-import-explanation">
+		<?php
+		printf(
+			/* translators: 1: expands to Yoast SEO */
+			esc_html__( 'This will import the post metadata like SEO titles and descriptions into your %1$s metadata. It will only do this when there is no existing %1$s metadata yet. The original data will remain in place.', 'wordpress-seo' ),
+			'Yoast SEO'
+		);
+		?>
 	</p>
 	<form action="<?php echo esc_url( admin_url( 'admin.php?page=wpseo_tools&tool=import-export#top#import-seo' ) ); ?>"
 		method="post" accept-charset="<?php echo esc_attr( get_bloginfo( 'charset' ) ); ?>">
@@ -81,12 +91,13 @@ function wpseo_import_external_select( $name, $plugins ) {
 </div>
 
 <div class="tab-block">
-	<h3><?php esc_html_e( 'Step 4: Run the configuration wizard', 'wordpress-seo' ); ?></h3>
+	<h3><?php esc_html_e( 'Step 4: Go through the first time configuration', 'wordpress-seo' ); ?></h3>
 	<p>
 		<?php
 		printf(
-			esc_html__( 'You should run the configuration wizard, from the SEO &rarr; General &rarr; Dashboard page, to make sure all the settings for your site are correct.', 'wordpress-seo' ),
-			'<a href="' . esc_url( admin_url( 'admin.php?page=wpseo_dashboard' ) ) . '">',
+			/* translators: 1: Link start tag to the First time configuration tab in the General page, 2: Link closing tag. */
+			esc_html__( 'You should finish the %1$sfirst time configuration%2$s to make sure your SEO data has been optimized and you’ve set the essential Yoast SEO settings for your site.', 'wordpress-seo' ),
+			'<a href="' . esc_url( admin_url( 'admin.php?page=wpseo_dashboard#top#first-time-configuration' ) ) . '">',
 			'</a>'
 		);
 		?>
@@ -95,7 +106,7 @@ function wpseo_import_external_select( $name, $plugins ) {
 
 <div class="tab-block">
 	<h3><?php esc_html_e( 'Step 5: Clean up', 'wordpress-seo' ); ?></h3>
-	<p>
+	<p class="yoast-cleanup-explanation">
 		<?php esc_html_e( 'Once you\'re certain your site is OK, you can clean up. This will remove all the original data.', 'wordpress-seo' ); ?>
 	</p>
 	<form action="<?php echo esc_url( admin_url( 'admin.php?page=wpseo_tools&tool=import-export#top#import-seo' ) ); ?>"

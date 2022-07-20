@@ -1,0 +1,72 @@
+/**
+ * Button
+ */
+.btn {
+  font-size: 14px;
+  line-height: 1;
+  color: $color--white;
+  background: $color--black;
+  border: 1px solid $color--black;
+  padding: 13px 21px;
+  border-radius: 21px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  &--white {
+    border: 1px solid $color--white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 9px 21px;
+    background: transparent;
+  }
+  &--grey {
+  	border: 1px solid $color--grey;
+  	color: $color--grey;
+  	font-size: 10px;
+  	text-transform: uppercase;
+  	border-radius: 3px;
+  	font-weight: 300;
+  	padding: 6px 10px;
+
+  	svg {
+  		path {
+  			transition: all ease 0.5s;
+  		}
+  	}
+  	span {
+  		transition: all ease 0.5s;
+  	}
+
+  	@include breakpoint(medium) {
+  		&:hover {
+  			background: $color--grey;
+  			color: $color--white;
+  			svg {
+  				path {
+  					fill: $color--white;
+  				}
+  			}
+  			span {
+  				color: $color--white;
+  			}
+  		}
+  	}
+  }
+  &--green-grey {
+    background: $color--green-grey;
+    text-transform: none;
+    font-size: 13px;
+    padding: 12px 10px;
+    color: $color--white;
+    text-align: center;
+    border-radius: 1px;
+    @include breakpoint(medium) {
+      &:hover {
+        background: $color--grey;
+        color: $color--white;
+      }
+    }
+  }
+  &--white-text {
+  	color: $color--white;
+  }
+}

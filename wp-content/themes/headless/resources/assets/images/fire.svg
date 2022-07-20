@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>i/trending</title>
+    <g id="TT-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Article-Page" transform="translate(-768.000000, -709.000000)">
+            <g id="Group-2" transform="translate(90.000000, 694.000000)">
+                <g id="/i/trending" transform="translate(678.000000, 15.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="8" height="8"></rect>
+                    <g id="Group-3" fill="#67655B">
+                        <path d="M6.27293458,5.71433837 C6.63456892,5.23551193 6.85689158,4.64619368 6.85689158,3.999958 C6.85689158,3.21106873 6.53744848,2.49720074 6.01978711,1.97956073 L4.89404722,2.77112443 C4.38039753,3.13275583 3.95917084,2.91376602 3.95917084,2.28561191 L3.95983946,0 L1.98023003,1.98028077 C1.46256866,2.49793792 1.14312385,3.21182305 1.14312385,4.00067804 C1.14312385,4.64691372 1.36613227,5.23623197 1.72708085,5.71505841 L0,5.71438809 L0.762099713,8 L7.2385689,8 L8,5.71438809 L6.27293458,5.71433837 Z" id="Fill-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

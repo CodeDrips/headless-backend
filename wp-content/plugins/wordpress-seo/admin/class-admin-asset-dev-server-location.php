@@ -11,17 +11,23 @@
 final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_Location {
 
 	/**
+	 * Holds the dev server's default URL.
+	 *
 	 * @var string
 	 */
 	const DEFAULT_URL = 'http://localhost:8080';
 
 	/**
+	 * Holds the url where the server is located.
+	 *
 	 * @var string
 	 */
 	private $url;
 
 	/**
-	 * @param string $url Where the dev server is located.
+	 * Class constructor.
+	 *
+	 * @param string|null $url Where the dev server is located.
 	 */
 	public function __construct( $url = null ) {
 		if ( $url === null ) {
@@ -40,7 +46,7 @@ final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_L
 	 * @return string The URL of the asset.
 	 */
 	public function get_url( WPSEO_Admin_Asset $asset, $type ) {
-		if ( WPSEO_Admin_Asset::TYPE_CSS === $type ) {
+		if ( $type === WPSEO_Admin_Asset::TYPE_CSS ) {
 			return $this->get_default_url( $asset, $type );
 		}
 
@@ -48,11 +54,11 @@ final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_L
 		$flat_version        = $asset_manager->flatten_version( WPSEO_VERSION );
 		$version_less_source = str_replace( '-' . $flat_version, '', $asset->get_src() );
 
-		if ( false !== strpos( $version_less_source, 'select2' ) ) {
+		if ( strpos( $version_less_source, 'select2' ) !== false ) {
 			return $this->get_default_url( $asset, $type );
 		}
 
-		$path = sprintf( '%s%s.js', $asset->get_src(), $asset->get_suffix() );
+		$path = sprintf( 'js/dist/%s%s.js', $asset->get_src(), $asset->get_suffix() );
 
 		return trailingslashit( $this->url ) . $path;
 	}

@@ -1,19 +1,19 @@
 <article @php(post_class())>
+  <header>
+    <h1 class="entry-title">
+      {!! $title !!}
+    </h1>
 
-  <section class="single-post__wrapper">
-    
-    <div class="grid-container">
+    @include('partials/entry-meta')
+  </header>
 
-      <div class="grid-x grid-margin-x">
+  <div class="entry-content">
+    @php(the_content())
+  </div>
 
-        <div class="cell small-12 medium-12">
+  <footer>
+    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+  </footer>
 
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-  
+  @php(comments_template())
 </article>

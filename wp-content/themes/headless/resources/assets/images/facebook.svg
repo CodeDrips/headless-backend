@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="/g/footer-desktop" transform="translate(-242.000000, -59.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(198.000000, 59.000000)">
+                <path d="M49.5848236,18 L49.5848236,8.99894615 L52.0695081,8.99894615 L52.3987825,5.89713314 L49.5848236,5.89713314 L49.5890451,4.34464587 C49.5890451,3.5356453 49.665911,3.1021643 50.8278694,3.1021643 L52.381193,3.1021643 L52.381193,0 L49.8961567,0 C46.9112285,0 45.8606111,1.50471302 45.8606111,4.03516717 L45.8606111,5.89748443 L44,5.89748443 L44,8.99929744 L45.8606111,8.99929744 L45.8606111,18 L49.5848236,18 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

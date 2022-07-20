@@ -1,37 +1,40 @@
 @font-face {
-    font-family: 'Gotham';
-    src: url('../../assets/fonts/gothambook.eot');
-    src: url('../../assets/fonts/gothambook.eot') format('embedded-opentype'),
-         url('../../assets/fonts/gothambook.woff') format('woff'),
-         url('../../assets/fonts/gothambook.ttf') format('truetype'),
-         url('../../assets/fonts/gothambook.svg#gothambook') format('svg');
-    font-weight:500;
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('../../assets/fonts/gothammedium.eot');
-    src: url('../../assets/fonts/gothammedium.eot') format('embedded-opentype'),
-         url('../../assets/fonts/gothammedium.woff') format('woff'),
-         url('../../assets/fonts/gothammedium.ttf') format('truetype'),
-         url('../../assets/fonts/gothammedium.svg#gothammedium') format('svg');
-    font-weight:700;
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('../../assets/fonts/gothambold.eot');
-    src: url('../../assets/fonts/gothambold.eot') format('embedded-opentype'),
-         url('../../assets/fonts/gothambold.woff') format('woff'),
-         url('../../assets/fonts/gothambold.ttf') format('truetype'),
-         url('../../assets/fonts/gothambold.svg#gothambold') format('svg');
-    font-weight:800;
+  font-family: 'Decimal';
+  src: url('../fonts/DecimalLight.woff') format('woff'),
+    url('../fonts/DecimalLight.ttf') format('truetype');
+  font-style: normal;
+ 	font-weight: 300;
 }
 
 @font-face {
-    font-family: 'DIN';
-    src: url('../../assets/fonts/DinCondensedBold.eot');
-    src: url('../../assets/fonts/DinCondensedBold.eot') format('embedded-opentype'),
-         url('../../assets/fonts/DinCondensedBold.woff') format('woff'),
-         url('../../assets/fonts/DinCondensedBold.ttf') format('truetype'),
-         url('../../assets/fonts/DinCondensedBold.svg#DinCondensedBold') format('svg');
-    font-weight:500;
+  font-family: 'Decimal';
+  src: url('../fonts/DecimalBook.woff') format('woff'),
+    url('../fonts/DecimalBook.ttf') format('truetype');
+  font-style: normal;
+ 	font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Decimal';
+  src: url('../fonts/DecimalSemibold.woff') format('woff'),
+    url('../fonts/DecimalSemibold.ttf') format('truetype');
+  font-style: normal;
+ 	font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Decimal';
+  src: url('../fonts/DecimalBold.woff') format('woff'),
+    url('../fonts/DecimalBold.ttf') format('truetype');
+  font-style: normal;
+ 	font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Kinescope';
+  src: url('../fonts/kinescope.woff') format('woff'),
+    url('../fonts/kinescope.ttf') format('truetype');
+  font-style: normal;
+ 	font-weight: 700;
 }

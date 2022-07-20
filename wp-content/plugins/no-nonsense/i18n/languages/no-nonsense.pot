@@ -1,0 +1,597 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: No Nonsense\n"
+"POT-Creation-Date: 2022-07-15 14:03-0500\n"
+"PO-Revision-Date: 2021-12-27 08:18-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: no-nonsense.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class-r34nono.php:20
+msgid "Admin bar logout link"
+msgstr ""
+
+#: class-r34nono.php:21
+msgid ""
+"Adds a color-highlighted logout link directly into the admin bar, next to "
+"the username. Helpful to remind users to log out when their session is done."
+msgstr ""
+
+#: class-r34nono.php:26 class-r34nono.php:70 class-r34nono.php:140
+#: class-r34nono.php:264
+msgid "Admin Bar"
+msgstr ""
+
+#: class-r34nono.php:31
+msgid "Auto core update send email only on error"
+msgstr ""
+
+#: class-r34nono.php:32
+msgid ""
+"By default, site admins receive a notification email every time WordPress "
+"runs auto-updates. Turn this on to only receive emails if there is an error "
+"during the update process."
+msgstr ""
+
+#: class-r34nono.php:37 class-r34nono.php:311 class-r34nono.php:326
+msgid "Security and Updates"
+msgstr ""
+
+#: class-r34nono.php:42
+msgid "Disable site search"
+msgstr ""
+
+#: class-r34nono.php:43
+msgid ""
+"If your site does not need search functionality, turn this on to cause all "
+"standard WordPress search URLs to redirect to the home page without "
+"performing a search. Does not affect admin search functionality. Also "
+"deregisters the search widget."
+msgstr ""
+
+#: class-r34nono.php:48 class-r34nono.php:162 class-r34nono.php:241
+#: class-r34nono.php:253 class-r34nono.php:297
+msgid "Front End"
+msgstr ""
+
+#: class-r34nono.php:53
+msgid "Disallow full site editing (FSE)"
+msgstr ""
+
+#: class-r34nono.php:54
+#, php-format
+msgid ""
+"Removes the \"Edit site\" link in the admin bar, the \"Editor\" link under "
+"\"Appearance,\" and the FSE notice in the Customizer. Also redirects any "
+"direct attempts to access the FSE page to the admin dashboard. If this "
+"option is active, you do not need to use the %1$sRemove \"Edit site\" link"
+"%2$s option under \"Admin Bar.\""
+msgstr ""
+
+#: class-r34nono.php:59 class-r34nono.php:197 class-r34nono.php:208
+#: class-r34nono.php:219 class-r34nono.php:286
+msgid "Block Editor"
+msgstr ""
+
+#: class-r34nono.php:64
+msgid "Hide admin bar for logged-in non-editors"
+msgstr ""
+
+#: class-r34nono.php:65
+#, php-format
+msgid ""
+"Hides the admin bar on front-end pages for logged-in users with no editing "
+"capabilities. Admin bar will still display for these users when they access "
+"their profile page. %1$sNote:%2$s With this option turned on, you will need "
+"to provide another way on the front end of your site for logged-in users to "
+"access their profile page and the logout link."
+msgstr ""
+
+#: class-r34nono.php:75
+msgid "Limit admin elements for logged-in non-editors"
+msgstr ""
+
+#: class-r34nono.php:76
+msgid ""
+"Hides parts of the admin sidebar menu and WordPress footer from logged-in "
+"users with no editing capabilities."
+msgstr ""
+
+#: class-r34nono.php:81 class-r34nono.php:106
+msgid "Admin Access"
+msgstr ""
+
+#: class-r34nono.php:86
+msgid "Replace WP logo with site icon on login screen"
+msgstr ""
+
+#: class-r34nono.php:87
+msgid ""
+"Replaces the WordPress logo and link on the login screen with the designated "
+"site icon (if set) and site link. If no icon is present, the WP logo and "
+"link are simply removed."
+msgstr ""
+
+#: class-r34nono.php:92 class-r34nono.php:129
+msgid "Login"
+msgstr ""
+
+#: class-r34nono.php:97
+msgid "Redirect admin to home page for logged-in non-editors"
+msgstr ""
+
+#: class-r34nono.php:98
+msgid ""
+"Logged-in users with no editing capabilities (e.g. Subscribers) will be "
+"redirected to the site home page if they try to access any admin pages, "
+"other than their own profile page."
+msgstr ""
+
+#: class-r34nono.php:100
+msgid "Also prevent access to profile screen"
+msgstr ""
+
+#: class-r34nono.php:111
+msgid "Remove admin color scheme picker"
+msgstr ""
+
+#: class-r34nono.php:112
+msgid "Removes the color scheme picker from the user profile page."
+msgstr ""
+
+#: class-r34nono.php:117 class-r34nono.php:151 class-r34nono.php:186
+#: class-r34nono.php:275 class-r34nono.php:339
+msgid "Admin Features"
+msgstr ""
+
+#: class-r34nono.php:122
+msgid "Remove admin email check interval"
+msgstr ""
+
+#: class-r34nono.php:123
+msgid "Skips the periodic verification of admin email address upon login."
+msgstr ""
+
+#: class-r34nono.php:134
+msgid "Remove admin bar WordPress logo"
+msgstr ""
+
+#: class-r34nono.php:135
+msgid "Removes WordPress icon and link from the admin bar."
+msgstr ""
+
+#: class-r34nono.php:145
+msgid "Remove Comments from admin"
+msgstr ""
+
+#: class-r34nono.php:146
+#, php-format
+msgid ""
+"Removes links to Comments in the admin bar and admin sidebar menu. Does not "
+"actually deactivate comment functionality; this should be done under "
+"%1$sSettings %2$s Discussion%3$s."
+msgstr ""
+
+#: class-r34nono.php:156
+msgid "Remove comments from front end"
+msgstr ""
+
+#: class-r34nono.php:157
+msgid ""
+"Removes all standard comment output from front-end pages. May not function "
+"properly if theme uses non-standard methods to display comments."
+msgstr ""
+
+#: class-r34nono.php:167
+msgid "Remove Dashboard widgets"
+msgstr ""
+
+#: class-r34nono.php:168
+msgid "Removes the selected widgets from the WordPress admin dashboard."
+msgstr ""
+
+#: class-r34nono.php:170
+msgid "Activity"
+msgstr ""
+
+#: class-r34nono.php:171
+msgid "At a Glance"
+msgstr ""
+
+#: class-r34nono.php:172
+msgid "Incoming Links"
+msgstr ""
+
+#: class-r34nono.php:173
+msgid "Plugins"
+msgstr ""
+
+#: class-r34nono.php:174
+msgid "Quick Draft"
+msgstr ""
+
+#: class-r34nono.php:175
+msgid "Recent Comments"
+msgstr ""
+
+#: class-r34nono.php:176
+msgid "Recent Drafts"
+msgstr ""
+
+#: class-r34nono.php:178
+msgid "Site Health"
+msgstr ""
+
+#: class-r34nono.php:179
+msgid "Welcome"
+msgstr ""
+
+#: class-r34nono.php:180
+msgid "WordPress Events and News"
+msgstr ""
+
+#: class-r34nono.php:191
+msgid "Remove default block patterns"
+msgstr ""
+
+#: class-r34nono.php:192
+msgid ""
+"Removes the default block patterns from the block editor, leaving only "
+"custom block patterns defined by your theme."
+msgstr ""
+
+#: class-r34nono.php:202
+msgid "Remove duotone SVG filters"
+msgstr ""
+
+#: class-r34nono.php:203
+msgid ""
+"Removes hardcoded HTML SVG tags for block editor duotone effects that "
+"normally get loaded on every page for Safari users."
+msgstr ""
+
+#: class-r34nono.php:213
+msgid "Remove \"Edit site\" link"
+msgstr ""
+
+#: class-r34nono.php:214
+#, php-format
+msgid ""
+"Removes the full site editing (FSE) link that appears in the admin bar on "
+"sites that use block themes, to avoid accidentally clicking it when "
+"intending to click \"Edit Page/Post,\" but leaves other FSE features in "
+"place. To disallow FSE entirely, select %1$sDisallow full site editing "
+"(FSE)%2$s under \"Admin Features\" instead."
+msgstr ""
+
+#: class-r34nono.php:224
+msgid "Remove head tags"
+msgstr ""
+
+#: class-r34nono.php:225
+#, php-format
+msgid "Removes the selected %1$s tags from the %2$s on all front-end pages."
+msgstr ""
+
+#: class-r34nono.php:228
+msgid "EditURI/RSD"
+msgstr ""
+
+#: class-r34nono.php:229
+msgid "oEmbed Discovery Links"
+msgstr ""
+
+#: class-r34nono.php:230
+msgid "Resource Hints"
+msgstr ""
+
+#: class-r34nono.php:231
+msgid "REST API"
+msgstr ""
+
+#: class-r34nono.php:232
+msgid "RSS Feeds"
+msgstr ""
+
+#: class-r34nono.php:233
+msgid "WLW Manifest"
+msgstr ""
+
+#: class-r34nono.php:234
+msgid "WP Generator"
+msgstr ""
+
+#: class-r34nono.php:235
+msgid "WP Shortlink"
+msgstr ""
+
+#: class-r34nono.php:246
+msgid "Remove front end Edit links"
+msgstr ""
+
+#: class-r34nono.php:247
+msgid ""
+"Removes Edit links that appear within the page layout of certain themes for "
+"logged-in users. Does not affect Edit links in the admin bar."
+msgstr ""
+
+#: class-r34nono.php:258
+msgid "Remove \"Howdy\""
+msgstr ""
+
+#: class-r34nono.php:259
+msgid ""
+"Removes \"Howdy\" greeting text (or the corresponding text in other "
+"languages) next to username in admin bar."
+msgstr ""
+
+#: class-r34nono.php:269
+msgid "Remove Posts from admin"
+msgstr ""
+
+#: class-r34nono.php:270
+#, php-format
+msgid ""
+"If you use WordPress as a general-purpose CMS without a blog component, this "
+"option will hide the Posts link in the main admin navigation. It does %1$snot"
+"%2$s deactivate the \"Posts\" post type itself, nor restrict any front-end "
+"content. If you are using an SEO plugin, you will need to adjust its "
+"settings to exclude Posts from your sitemap XML."
+msgstr ""
+
+#: class-r34nono.php:280
+msgid "Remove Widgets block editor"
+msgstr ""
+
+#: class-r34nono.php:281
+msgid "Restores the previous default functionality of the Widgets page."
+msgstr ""
+
+#: class-r34nono.php:291
+msgid "Remove WP emoji"
+msgstr ""
+
+#: class-r34nono.php:292
+msgid ""
+"Removes built-in emoji-related WordPress JavaScript code that normally gets "
+"loaded on every page. Also removes emoji tools in the TinyMCE editor."
+msgstr ""
+
+#: class-r34nono.php:302
+msgid "Disable XML-RPC"
+msgstr ""
+
+#: class-r34nono.php:303
+#, php-format
+msgid ""
+"Most WordPress sites do not use XML-RPC, although some plugins (e.g. "
+"Jetpack) and mobile applications may require it. Per changes in WordPress "
+"3.5, turning this option on will only disable XML-RPC requests that require "
+"authentication. Use the %1$sAlso kill any incoming XML-RPC request%2$s "
+"option below to cause all incoming XML-RPC requests to exit early. (Note: "
+"Because this is a plugin-based solution, XML-RPC requests still must "
+"partially load, to the point where this plugin is active, before it can kill "
+"the process. For better performance during a DDOS attack, you may wish to "
+"block calls to %3$s directly in your site&rsquo;s %4$s file."
+msgstr ""
+
+#: class-r34nono.php:307
+msgid "Also kill any incoming XML-RPC request"
+msgstr ""
+
+#: class-r34nono.php:320
+msgid "Core upgrade skip new bundled"
+msgstr ""
+
+#: class-r34nono.php:321
+#, php-format
+msgid ""
+"Skips installing things like new themes that are bundled by default with "
+"WordPress core upgrades. This can also be handled manually by adding the "
+"%1$sCORE_UPGRADE_SKIP_NEW_BUNDLED%2$s constant in your %3$swp-config.php%4$s "
+"file."
+msgstr ""
+
+#: class-r34nono.php:333
+msgid "Disallow theme and plugin file editing"
+msgstr ""
+
+#: class-r34nono.php:334
+msgid ""
+"Removes the ability for site admins to edit theme and plugin files directly "
+"within WordPress."
+msgstr ""
+
+#: class-r34nono.php:348
+msgid "Deactivate and delete Akismet Anti-Spam plugin"
+msgstr ""
+
+#: class-r34nono.php:349
+msgid ""
+"Deactivates and deletes the Akismet Anti-Spam plugin that is included in the "
+"default WordPress installation."
+msgstr ""
+
+#: class-r34nono.php:354
+msgid "Deactivate and delete Hello Dolly plugin"
+msgstr ""
+
+#: class-r34nono.php:355
+msgid ""
+"Deactivates and deletes the Hello Dolly plugin that is included in the "
+"default WordPress installation."
+msgstr ""
+
+#: class-r34nono.php:360
+msgid "Delete inactive themes"
+msgstr ""
+
+#: class-r34nono.php:361
+msgid ""
+"Deletes all installed themes except the currently active theme. If your site "
+"will be using a custom theme, be sure to activate it prior to running this "
+"utility. If the current theme is a child theme, its parent theme will not be "
+"deleted. Note: WordPress Site Health recommends keeping at least one default "
+"theme installed. If you wish to follow the recommendation, be sure to "
+"reinstall the default theme of your choice after running this utility."
+msgstr ""
+
+#: class-r34nono.php:366
+msgid "Delete sample content"
+msgstr ""
+
+#: class-r34nono.php:367
+msgid ""
+"Deletes the sample page, post, and comment that are included by default in a "
+"new WordPress installation."
+msgstr ""
+
+#: class-r34nono.php:372
+msgid "Remove default tagline"
+msgstr ""
+
+#: class-r34nono.php:373
+#, php-format
+msgid ""
+"Removes the default WordPress tagline (\"%1$s\"). You will probably want to "
+"add your own tagline in its place eventually, but it is easy to forget and "
+"it often appears in unexpected places."
+msgstr ""
+
+#: class-r34nono.php:373 functions.php:418
+msgid "Just another WordPress site"
+msgstr ""
+
+#: class-r34nono.php:378
+#, php-format
+msgid "Set permalink structure to %1$s"
+msgstr ""
+
+#: class-r34nono.php:379
+msgid ""
+"Sets the permalink structure to the most commonly used option on modern "
+"websites, and flushes rewrite rules."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: class-r34nono.php:437 class-r34nono.php:438
+msgid "No Nonsense"
+msgstr ""
+
+#: class-r34nono.php:465
+msgid "Utility executed successfully."
+msgstr ""
+
+#: class-r34nono.php:465
+msgid "Utility executed, but with no effect or possible errors."
+msgstr ""
+
+#: class-r34nono.php:471
+msgid "Utility could not execute; requested function does not exist."
+msgstr ""
+
+#: class-r34nono.php:478
+msgid "Utilities completed:"
+msgstr ""
+
+#: class-r34nono.php:502
+msgid "Settings updated. You may need to refresh the page to see changes."
+msgstr ""
+
+#: functions.php:42
+msgid "Log Out"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:25
+msgid "Utilities"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:27
+msgid ""
+"Utilities are one-time actions to clean up default content, plugins and "
+"options in the default WordPress installation."
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:51
+msgid "Run Selected Utilities"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:51
+msgid "Are you sure? This cannot be undone."
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:58
+msgid "Settings"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:60
+msgid ""
+"Settings are persistent configuration changes that modify default behaviors "
+"on each page load."
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:66 templates/admin/r34nono-admin.php:120
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:82
+msgid "Off"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:85
+msgid "On"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:135
+msgid "No Nonsense Support"
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:139
+#, php-format
+msgid ""
+"For support with the %1$s plugin, please use the %2$sWordPress Support Forums"
+"%3$s or email %4$s."
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:153
+msgid ""
+"This plugin is free to use. However, if you find it to be of value, we "
+"welcome your donation (suggested amount: USD $9), to help fund future "
+"development."
+msgstr ""
+
+#: templates/admin/r34nono-admin.php:155
+msgid "Make a Donation"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://room34.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The fastest, cleanest way to get rid of the parts of WordPress you don't "
+"need."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Room 34 Creative Services, LLC"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://nononsensewp.com"
+msgstr ""

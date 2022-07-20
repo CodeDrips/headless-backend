@@ -1,0 +1,178 @@
+.category-in-brief {
+	background: $color--white;
+	.header {
+		background: $color--white;
+		&__logo {
+			g {
+				fill: $color--black;
+			}
+		}
+		&__nav {
+			li {
+				a {
+					color: $color--black;
+				}
+			}
+		}
+		&__actions {
+			.btn {
+				color: $color--black;
+				border-color: $color--black;
+			}
+		}
+		&__hamburger {
+		  @mixin line {
+		    background: $color--black;
+		  }
+		  .lines {
+		    @include line;
+		    &:before, &:after {
+		      @include line;
+		    }
+	    }
+	    &.active {
+		    .lines {
+		      background: transparent;
+		      &:before, &:after {
+		      	background: $color--white;
+		      }
+		    }
+		  }
+		}
+		&__search {
+			g {
+				fill: $color--black;
+			}
+		}
+		.clock {
+		  background: $color--black;
+		}
+		.dot {
+		  background: $color--black;
+		  border: 1px solid $color--white;
+		}
+		.hour-hand {
+		  background: $color--white;
+		}
+		.minute-hand {
+		  background: $color--white;
+		}
+		.second-hand {
+		  background: red;
+		}
+		.diallines {
+		  background: $color--white;
+		}
+		.dropdown {
+			background: $color--white;
+			border-top: 1px solid rgba($color--black, 0.11);
+			&__title {
+				svg {
+					#Menu-Brands {
+						fill: $color--black;
+					}
+				}
+				h4 {
+					color: $color--black;
+				}
+			}
+			&__menus, &__categories {
+				&:before {
+					background: rgba($color--black, 0.11);
+				}
+			}
+		}
+	}
+	.archive__main {
+		.archive__posts {
+			.card {
+				width: 100%;
+				border: 1px solid $color--black;
+				margin-bottom: 30px;
+				@include breakpoint(medium) {
+					width: 100%;
+				}
+				img {
+					width: 100%;
+				}
+				h4 {
+					color: $color--black;
+					margin-top: 10px;
+				}
+				p {
+					color: $color--black;
+				}
+				&__content {
+					padding: 10px 20px 30px;
+					p {
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+				&__buttons {
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0;
+					a {
+						display: block;
+						border-radius: 1px;
+						margin-right: 18px;
+					}
+				}
+			}
+		}
+		.article__tags {
+			svg {
+				polygon {
+					fill: $color--grey;
+				}
+			}
+			h4 {
+				color: $color--grey;
+			}
+		}
+		.archive__trending {
+			.card__content {
+				h4, a {
+					color: $color--black;
+				}
+			}
+		}
+	}
+	.footer {
+		background: $color--white;
+		&__logo {
+			g {
+				fill: $color--black;
+			}
+		}
+		&__content {
+			h4 {
+				color: $color--black;
+			}
+			p {
+				color: $color--black;
+			}
+			a {
+				color: $color--black;
+			}
+		}
+		&__lists {
+			h4 {
+				color: $color--black;
+			}
+			p {
+				color: $color--black;
+			}
+			ul {
+				li {
+					color: $color--black;
+					a {
+						color: $color--black;
+					}
+				}
+			}
+		}
+	}
+}

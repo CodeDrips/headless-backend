@@ -6,7 +6,7 @@
  */
 
 /**
- * Helps with creating shortlinks in the plugin
+ * Helps with creating shortlinks in the plugin.
  */
 class WPSEO_Shortlinker {
 
@@ -16,15 +16,22 @@ class WPSEO_Shortlinker {
 	 * @return array The shortlink data.
 	 */
 	protected function collect_additional_shortlink_data() {
-		return array(
+		$data = [
 			'php_version'      => $this->get_php_version(),
 			'platform'         => 'wordpress',
-			'platform_version' => $GLOBALS['wp_version'],
+			'platform_version' => $this->get_platform_version(),
 			'software'         => $this->get_software(),
 			'software_version' => WPSEO_VERSION,
-			'role'             => $this->get_filtered_user_role(),
 			'days_active'      => $this->get_days_active(),
-		);
+			'user_language'    => $this->get_user_language(),
+		];
+
+		$admin_page = filter_input( INPUT_GET, 'page' );
+		if ( ! empty( $admin_page ) ) {
+			$data['screen'] = $admin_page;
+		}
+
+		return $data;
 	}
 
 	/**
@@ -79,7 +86,16 @@ class WPSEO_Shortlinker {
 	private function get_php_version() {
 		$version = explode( '.', PHP_VERSION );
 
-		return (int) $version[0] . '.' . (int) $version[1] . '.' . (int) $version[2];
+		return (int) $version[0] . '.' . (int) $version[1];
+	}
+
+	/**
+	 * Gets the current site's platform version.
+	 *
+	 * @return string The wp_version.
+	 */
+	protected function get_platform_version() {
+		return $GLOBALS['wp_version'];
 	}
 
 	/**
@@ -88,36 +104,11 @@ class WPSEO_Shortlinker {
 	 * @return string The software name + activation state.
 	 */
 	private function get_software() {
-		if ( WPSEO_Utils::is_yoast_seo_premium() ) {
+		if ( YoastSEO()->helpers->product->is_premium() ) {
 			return 'premium';
 		}
 
 		return 'free';
-	}
-
-	/**
-	 * Gets the current user's role without leaking roles that shouldn't be public.
-	 *
-	 * @return string The filtered user role.
-	 */
-	private function get_filtered_user_role() {
-		$user           = wp_get_current_user();
-		$built_in_roles = array(
-			'administrator',
-			'wpseo_manager',
-			'wpseo_editor',
-			'editor',
-			'author',
-			'contributor',
-			'subscriber',
-		);
-		$filtered_roles = array_intersect( $built_in_roles, $user->roles );
-
-		$role = current( $filtered_roles );
-		if ( ! $role ) {
-			$role = 'unknown';
-		}
-		return $role;
 	}
 
 	/**
@@ -128,7 +119,44 @@ class WPSEO_Shortlinker {
 	private function get_days_active() {
 		$date_activated = WPSEO_Options::get( 'first_activated_on' );
 		$datediff       = ( time() - $date_activated );
+		$days           = (int) round( $datediff / DAY_IN_SECONDS );
+		switch ( $days ) {
+			case 0:
+			case 1:
+				$cohort = '0-1';
+				break;
+			case ( $days < 5 ):
+				$cohort = '2-5';
+				break;
+			case ( $days < 30 ):
+				$cohort = '6-30';
+				break;
+			case ( $days < 91 ):
+				$cohort = '31-90';
+				break;
+			case ( $days < 181 ):
+				$cohort = '91-180';
+				break;
+			case ( $days < 366 ):
+				$cohort = '181-365';
+				break;
+			default:
+				$cohort = '365plus';
+		}
 
-		return (int) round( $datediff / DAY_IN_SECONDS );
+		return $cohort;
+	}
+
+	/**
+	 * Gets the user's language.
+	 *
+	 * @return string|false The user's language or `false` when it couldn't be retrieved.
+	 */
+	private function get_user_language() {
+		if ( function_exists( 'get_user_locale' ) ) {
+			return get_user_locale();
+		}
+
+		return false;
 	}
 }

@@ -6,18 +6,20 @@
  */
 
 /**
- * Class WPSEO_Taxonomy_Presenter
+ * Class WPSEO_Taxonomy_Presenter.
  */
 class WPSEO_Taxonomy_Fields_Presenter {
 
 	/**
-	 * The taxonomy meta data for the current term
+	 * The taxonomy meta data for the current term.
 	 *
 	 * @var array
 	 */
 	private $tax_meta;
 
 	/**
+	 * Constructs the WPSEO_Taxonomy_Fields_Presenter class.
+	 *
 	 * @param stdClass $term The current term.
 	 */
 	public function __construct( $term ) {
@@ -25,9 +27,11 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	}
 
 	/**
-	 * Displaying the form fields
+	 * Displaying the form fields.
 	 *
 	 * @param array $fields Array with the fields that will be displayed.
+	 *
+	 * @return string
 	 */
 	public function html( array $fields ) {
 		$content = '';
@@ -42,6 +46,8 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	 *
 	 * @param string $field_name          Variable the row controls.
 	 * @param array  $field_configuration Array with the field configuration.
+	 *
+	 * @return string
 	 */
 	private function form_row( $field_name, array $field_configuration ) {
 		$esc_field_name = esc_attr( $field_name );
@@ -87,7 +93,9 @@ class WPSEO_Taxonomy_Fields_Presenter {
 			case 'div':
 				$field .= '<div id="' . $field_name . '"></div>';
 				break;
-
+			case 'url':
+				$field .= '<input name="' . $field_name . '" id="' . $field_name . '" ' . $class . ' type="url" value="' . esc_attr( urldecode( $field_value ) ) . '" size="40"' . $aria_describedby . '/>';
+				break;
 			case 'text':
 				$field .= '<input name="' . $field_name . '" id="' . $field_name . '" ' . $class . ' type="text" value="' . esc_attr( $field_value ) . '" size="40"' . $aria_describedby . '/>';
 				break;
@@ -126,7 +134,7 @@ class WPSEO_Taxonomy_Fields_Presenter {
 					' />';
 				break;
 			case 'select':
-				if ( is_array( $options ) && $options !== array() ) {
+				if ( is_array( $options ) && $options !== [] ) {
 					$field .= '<select name="' . $field_name . '" id="' . $field_name . '"' . $aria_describedby . '>';
 
 					$select_options = ( array_key_exists( 'options', $options ) ) ? $options['options'] : $options;
@@ -149,7 +157,7 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	}
 
 	/**
-	 * Getting the value for given field_name
+	 * Getting the value for given field_name.
 	 *
 	 * @param string $field_name The fieldname to get the value for.
 	 *
@@ -164,7 +172,7 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	}
 
 	/**
-	 * Getting the class attributes if $options contains a class key
+	 * Getting the class attributes if $options contains a class key.
 	 *
 	 * @param array $options The array with field options.
 	 *
@@ -179,7 +187,7 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	}
 
 	/**
-	 * Getting the label HTML
+	 * Getting the label HTML.
 	 *
 	 * @param string $label      The label value.
 	 * @param string $field_name The target field.
@@ -197,9 +205,9 @@ class WPSEO_Taxonomy_Fields_Presenter {
 	/**
 	 * Returns the HTML for the row which contains label, help and the field.
 	 *
-	 * @param string                 $label       The html for the label if there was a label set.
-	 * @param WPSEO_Admin_Help_Panel $help        The help panel to render in this row.
-	 * @param string                 $field       The html for the field.
+	 * @param string                 $label The html for the label if there was a label set.
+	 * @param WPSEO_Admin_Help_Panel $help  The help panel to render in this row.
+	 * @param string                 $field The html for the field.
 	 *
 	 * @return string
 	 */

@@ -16,11 +16,16 @@ class WPSEO_Register_Capabilities implements WPSEO_WordPress_Integration {
 	 * @return void
 	 */
 	public function register_hooks() {
-		add_action( 'wpseo_register_capabilities', array( $this, 'register' ) );
+		add_action( 'wpseo_register_capabilities', [ $this, 'register' ] );
 
 		if ( is_multisite() ) {
-			add_action( 'user_has_cap', array( $this, 'filter_user_has_wpseo_manage_options_cap' ), 10, 4 );
+			add_action( 'user_has_cap', [ $this, 'filter_user_has_wpseo_manage_options_cap' ], 10, 4 );
 		}
+
+		/**
+		 * Maybe add manage_privacy_options capability for wpseo_manager user role.
+		 */
+		add_filter( 'map_meta_cap', [ $this, 'map_meta_cap_for_seo_manager' ], 10, 2 );
 	}
 
 	/**
@@ -31,14 +36,15 @@ class WPSEO_Register_Capabilities implements WPSEO_WordPress_Integration {
 	public function register() {
 		$manager = WPSEO_Capability_Manager_Factory::get();
 
-		$manager->register( 'wpseo_bulk_edit', array( 'editor', 'wpseo_editor', 'wpseo_manager' ) );
-		$manager->register( 'wpseo_edit_advanced_metadata', array( 'wpseo_editor', 'wpseo_manager' ) );
+		$manager->register( 'wpseo_bulk_edit', [ 'editor', 'wpseo_editor', 'wpseo_manager' ] );
+		$manager->register( 'wpseo_edit_advanced_metadata', [ 'editor', 'wpseo_editor', 'wpseo_manager' ] );
 
-		$manager->register( 'wpseo_manage_options', array( 'administrator', 'wpseo_manager' ) );
+		$manager->register( 'wpseo_manage_options', [ 'administrator', 'wpseo_manager' ] );
+		$manager->register( 'view_site_health_checks', [ 'wpseo_manager' ] );
 	}
 
 	/**
-	 * Revokes the 'wpseo_manage_options' capability from administrator users if it should only
+	 * Revokes the 'wpseo_manage_options' capability from administrator users if it should
 	 * only be granted to network administrators.
 	 *
 	 * @param array   $allcaps An array of all the user's capabilities.
@@ -72,5 +78,34 @@ class WPSEO_Register_Capabilities implements WPSEO_WordPress_Integration {
 		}
 
 		return $allcaps;
+	}
+
+	/**
+	 * Maybe add manage_privacy_options capability for wpseo_manager user role.
+	 *
+	 * @param string[] $caps Primitive capabilities required of the user.
+	 * @param string[] $cap  Capability being checked.
+	 *
+	 * @return string[] Filtered primitive capabilities required of the user.
+	 */
+	public function map_meta_cap_for_seo_manager( $caps, $cap ) {
+		$user = wp_get_current_user();
+
+		// No multisite support.
+		if ( is_multisite() ) {
+			return $caps;
+		}
+
+		// User must be of role wpseo_manager.
+		if ( ! in_array( 'wpseo_manager', $user->roles, true ) ) {
+			return $caps;
+		}
+
+		// Remove manage_options cap requirement if requested cap is manage_privacy_options.
+		if ( $cap === 'manage_privacy_options' ) {
+			return array_diff( $caps, [ 'manage_options' ] );
+		}
+
+		return $caps;
 	}
 }

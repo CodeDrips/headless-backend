@@ -1,0 +1,94 @@
+.clock {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 9px;
+  }
+}
+
+.dot {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #000;
+}
+
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 2px;
+  height: 9px;
+  background: #000;
+  top: 20px;
+  transform-origin: 50% 0;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 2px;
+  height: 13px;
+  background: #000;
+  top: 20px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 0;
+}
+
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 1px;
+  height: 15px;
+  background: red;
+  top: 20px;
+  left: 50%;
+  margin-left: -1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 0;
+}
+
+.diallines {
+  position: absolute;
+  z-index: 2;
+  width: 1px;
+  height: 4px;
+  background: #000;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 20px;
+  display: none;
+  &:nth-child(1) {
+    display: block;
+  }
+  &:nth-child(5n + 1) {
+    display: block;
+  }
+  &:nth-child(6), &:nth-child(11) {
+    height: 3px;
+  }
+}
