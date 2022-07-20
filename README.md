@@ -1,4 +1,4 @@
-# m3 Property
+# CodeDrips Headless - Wordpress Theme
 
-- v0.0.1
+- v2.1.0
 
