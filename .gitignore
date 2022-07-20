@@ -19,6 +19,11 @@ sitemap.xml
 *.swp
 Thumbs.db
 
+favicon.ico
+apple-touch-icon.png
+apple-touch-icon-precomposed.png
+.htaccess
+
 # wordpress specific
 wp-config.php
 wp-content/uploads/
@@ -35,6 +40,7 @@ wp-content/themes/twentytwenty/
 wp-content/themes/twentytwentyone/
 wp-content/themes/twentytwentytwo/
 wp-content/ai1wm-backups
+headless-backend/wp-content/languages
 
 # wpengine specific
 .smushit-status
